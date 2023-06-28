@@ -13,17 +13,18 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
+    line-height: 1;
     margin: 0;
     padding: 0;
-    line-height: 1;
 }
 ol, ul,li {
     list-style: none;
 }
 a{
-    text-decoration: none;
     color: var(--cor-de-link);
+    text-decoration: none;
 }
+
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
@@ -41,7 +42,8 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu*/
 
 section.menu{
-
+    display: flex;
+    justify-content: center;
 }
 
 /*Sessão Title*/

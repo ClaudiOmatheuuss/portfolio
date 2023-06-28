@@ -1,0 +1,9 @@
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    width: 642px;
+}
+
+.menu__list__item__contato{
+    font-weight: bold;
+}
