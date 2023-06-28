@@ -42,14 +42,22 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sessão Menu*/
 
 section.menu{
+    align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    height: 88px;
+    margin: 0 auto;
+    padding: 32px 0;
+    width: 78.88%;
 }
 
 /*Sessão Title*/
 
 section.title{
-
+    display: block;
+    height: 23rem;
+    margin: 0 auto;
+    width: 81.142857142857%;
 }
 
 /*Sessão About*/

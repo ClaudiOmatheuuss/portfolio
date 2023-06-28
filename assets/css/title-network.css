@@ -1,0 +1,6 @@
+.title__network{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.75%;
+    width: 80%;
+}

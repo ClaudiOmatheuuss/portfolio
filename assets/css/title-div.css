@@ -1,5 +1,4 @@
-.menu__list{
+.title__div{
     display: flex;
     justify-content: space-between;
-    width: 642px;
 }
