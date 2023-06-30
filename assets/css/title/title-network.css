@@ -1,6 +1,7 @@
 .title__network{
     display: flex;
     justify-content: space-around;
-    padding-top: 0.75%;
+    padding-top: 1.1%;
+    margin-bottom: 0%;
     width: 80%;
 }
