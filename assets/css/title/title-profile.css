@@ -1,18 +1,18 @@
 .title__profile {   
-    transition: all 300ms linear;
-    touch-action: manipulation;
-    will-change: transform;
-    height: 368px;
+  height: 368px;
+  transition: all 300ms linear;
+  touch-action: manipulation;
+  will-change: transform;
   }
   
   
   .title__profile:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 15px 15px 15px;
-    transform: translateY(-4px);
-    transform: translateX(-4px);
+  box-shadow: rgba(0, 0, 0, 0.25) 15px 15px 15px;
+  transform: translateY(-4px);
+  transform: translateX(-4px);
 }
   
   .title__profile:active {
-    box-shadow: none;
-    transform: translateY(0);
+  box-shadow: none;
+  transform: translateY(0);
   }

@@ -12,7 +12,7 @@ coloque nas sessões indicadas*/
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    font-family: 'Raleway' , sans-serif;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ section.menu{
 
 section.title{
     display: block;
-    height: 23rem;
+    height: 25rem;
     margin: 0 auto;
     width: 81.142857142857%;
 }
