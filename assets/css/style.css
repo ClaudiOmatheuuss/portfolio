@@ -96,6 +96,28 @@ section.footer{
    
 }
 
+body::-webkit-scrollbar {
+    width: 6.7px;              
+}
+  
+body::-webkit-scrollbar-track {
+    background: black;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: darkcyan;    
+    border-radius: 20px;    
+}
+
+  
+body::-webkit-scrollbar:active {
+    width: 10px;               
+}
+body::-webkit-scrollbar::after {
+    width: 10px;               
+}
+
+
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
