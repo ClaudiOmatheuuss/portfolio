@@ -1,9 +1,10 @@
 .title__profile {   
+  border-radius: 100%;  
   height: 368px;
   transition: all 300ms linear;
   touch-action: manipulation;
   will-change: transform;
-  }
+}
   
   
   .title__profile:hover {
