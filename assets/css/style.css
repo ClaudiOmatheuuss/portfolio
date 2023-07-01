@@ -7,12 +7,13 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --fonte-padrao: 'Raleway' , sans-serif;
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway' , sans-serif;
+    font-family: var(--fonte-padrao);
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -97,11 +98,11 @@ section.footer{
 }
 
 body::-webkit-scrollbar {
-    width: 6.7px;              
+    width: 7px;              
 }
   
 body::-webkit-scrollbar-track {
-    background: black;
+    background: lightgray;
 }
   
 body::-webkit-scrollbar-thumb {
@@ -113,10 +114,27 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar:active {
     width: 10px;               
 }
-body::-webkit-scrollbar::after {
-    width: 10px;               
-}
 
+#scrollToTop {
+    background: #000;
+    border-radius: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
+}
+  
+#scrollToTop:hover {
+    background: #555;
+}
+  
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
