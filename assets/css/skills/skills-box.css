@@ -12,6 +12,5 @@
 }
 
 .skills__box:hover{
-    border: 2px solid var(--cor-padrao-texto);
     filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.75));
 }
