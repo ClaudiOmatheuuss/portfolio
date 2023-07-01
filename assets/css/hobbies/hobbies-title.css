@@ -1,0 +1,6 @@
+.hobbies__title{
+    color: var(--cor-padrao-texto);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem;
+}

@@ -76,7 +76,13 @@ section.about{
 /*Sessão Hobbies*/
 
 section.hobbies{
-    
+    display: flex;
+    flex-direction: column;
+    height: 15.25rem;
+    justify-content: center;
+    margin-bottom: 5.5rem;
+    text-align: center;
+    width: 90%;
 }
 
 /* Experiência Acadêmica*/
