@@ -1,0 +1,9 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    height: 15.25rem;
+    justify-content: center;
+    margin-bottom: 5.5rem;
+    text-align: center;
+    width: 90%;
+}

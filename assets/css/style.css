@@ -8,9 +8,11 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
    --fonte-padrao: 'Raleway' , sans-serif;
+   --cor-padrao-texto: #464646;
 }
 
 body {
+    color: var(--cor-padrao-texto);
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: var(--fonte-padrao);
@@ -64,7 +66,11 @@ section.title{
 /*Sessão About*/
 
 section.about{
-
+    background-color: #EAF2FD;
+    display: block;
+    margin: 7rem auto;
+    padding: 4rem 7.5rem;
+    text-align: left;
 }
 
 /*Sessão Hobbies*/
