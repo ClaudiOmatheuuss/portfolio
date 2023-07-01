@@ -104,11 +104,11 @@ section.footer{
 }
 
 body::-webkit-scrollbar {
-    width: 7px;              
+    width: 8.5px;              
 }
   
 body::-webkit-scrollbar-track {
-    background: lightgray;
+    background: var(--cor-padrao-texto);
 }
   
 body::-webkit-scrollbar-thumb {
