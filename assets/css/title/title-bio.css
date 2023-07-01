@@ -1,5 +1,5 @@
 .title__bio{
-    font-family: Raleway, sans-serif;
+    font-family:  var(--fonte-padrao);
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.8rem;

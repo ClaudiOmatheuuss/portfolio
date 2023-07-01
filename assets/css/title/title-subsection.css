@@ -1,6 +1,6 @@
 .title__subsection{
     color: #464646;
-    font-family: Raleway;
+    font-family: var(--fonte-padrao);
     font-size: 1.30rem;
     font-weight: 400;
     line-height: 1.625rem;

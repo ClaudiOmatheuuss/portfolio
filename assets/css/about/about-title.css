@@ -1,5 +1,5 @@
 .about__title{
-    font-family: Raleway;
+    font-family: var(--fonte-padrao);
     font-size: 2rem;
     font-weight: bold;
 }
