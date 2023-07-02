@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
    --fonte-padrao: 'Raleway' , sans-serif;
    --cor-padrao-texto: #464646;
+   --tamanho-padrao-container: 71rem;
 }
 
 body {
@@ -58,9 +59,9 @@ section.menu{
 
 section.title{
     display: block;
-    height: 25rem;
+    height: 26.5rem;
     margin: 0 auto;
-    width: 81.142857142857%;
+    width: var(--tamanho-padrao-container);
 }
 
 /*Sessão About*/

@@ -1,5 +1,5 @@
 .about__container{
     padding-bottom: 4rem;
     height: 15.838rem;
-    width: 71rem;
+    width: var(--tamanho-padrao-container);
 }
