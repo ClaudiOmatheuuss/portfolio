@@ -1,0 +1,9 @@
+.academic__title{
+    color: var(--cor-padrao-texto);
+    font-family: var(--fonte-padrao);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}

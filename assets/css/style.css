@@ -26,6 +26,7 @@ ol, ul,li {
 }
 a{
     color: var(--cor-de-link);
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -89,7 +90,11 @@ section.hobbies{
 /* Experiência Acadêmica*/
 
 section.academic{
-
+    background-color: #EAF2FD;
+    display: block;
+    margin: 7rem auto;
+    padding: 4rem 8rem;
+    text-align: center;
 }
 
 /* experiência*/

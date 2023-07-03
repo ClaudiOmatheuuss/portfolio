@@ -4,6 +4,7 @@
   transition: all 300ms linear;
   touch-action: manipulation;
   will-change: transform;
+  width: 368px;
 }
   
   
