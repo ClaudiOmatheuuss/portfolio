@@ -1,0 +1,19 @@
+.experience__botao--repo{
+    border: 2px solid #2A7AE4;
+    background: none;
+    box-sizing: border-box;
+    color: #2A7AE4;
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    height: 3.188rem;
+    margin: 2em 2em 0 0;
+    text-align: center;
+    transition: .5s all linear;
+    width: 7.25rem;
+}
+
+.experience__botao--repo:hover{
+    background: #D4E4FA;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
+}

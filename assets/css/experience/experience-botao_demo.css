@@ -1,0 +1,19 @@
+.experience__botao--demo{
+    border: 2px solid #2A7AE4;
+    background: blue;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    height: 3.188rem;
+    margin-top: 2em;
+    text-align: center;
+    transition: .5s all linear;
+    width: 7.25rem;
+}
+
+.experience__botao--demo:hover{
+    background: #5595E9;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
+}

@@ -1,13 +1,7 @@
-.experience__title{
+#experience__title{
     color: var(--cor-padrao-texto);
     font-family: var(--fonte-padrao);
     font-size: 2rem;
     font-weight: bold;
-}
-
-.experience__texto{
-    color: var(--cor-padrao-texto);
-    font-family: var(--fonte-padrao);
-    font-size: 2rem;
-    font-weight: bold;
+    text-align: justify;
 }
