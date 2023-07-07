@@ -281,8 +281,8 @@
             </div>
         </div>  
         </div>
-    </div>  
-
+    </section>
+    <div>
         <!-- Sessão de Contato -->
         <section class="formcontato">
             <div id="contato" class="formcontato__contacto">
@@ -294,11 +294,11 @@
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                     <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" onscroll="scrollFunctionTextarea()"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required maxlength="50">
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required maxlength="50">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required maxlength="300"></textarea>
+                        <button class="formcontato__botao" id="formcontato__botao">Enviar mensagem</button>
                     </form>
                 </div>
             </div>

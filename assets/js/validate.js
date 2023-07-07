@@ -14,3 +14,18 @@ function scrollFunction() {
 }
   
 //Seu JavaScript de validação aqui
+const formulario = document.querySelector('formcontato__form');
+const campoNome = document.getElementById('#nome');
+const campoEmail = document.getElementById('#email');
+const campoAssunto = document.getElementById('#assunto');
+const campoMensagem = document.getElementById('#mensagem');
+const botao = document.getElementById('#formcontato__botao');
+
+// Adiciona um evento de validação ao formulário
+formulario.addEventListener('input', function() {
+  if (campoNome.validity.valid && campoEmail.validity.valid && campoAssunto.validity.valid && campoMensagem.validity.valid) {
+    botao.disabled = false;
+  } else {
+    botao.disabled = true;
+  }
+});
