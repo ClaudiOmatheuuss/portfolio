@@ -3,3 +3,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+}
