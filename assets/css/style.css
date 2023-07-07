@@ -5,7 +5,7 @@ coloque nas sessões indicadas*/
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #FFFFFF;
+   --cor-de-fundo: #EDEDED;
    --cor-de-link: #000;
    --fonte-padrao: 'Raleway' , sans-serif;
    --cor-padrao-texto: #464646;
@@ -150,16 +150,16 @@ section.footer{
 
 /*estilos de scroll*/
 body::-webkit-scrollbar {
-    width: 12px;              
+    width: 11px;              
 }
   
 body::-webkit-scrollbar-track {
-    background: var(--cor-padrao-texto);
+    background: #fff;
 }
   
 body::-webkit-scrollbar-thumb {
     background-color: darkcyan;    
-    border-radius: 20px;    
+    border-radius: 15px;    
 }
 
   
