@@ -8,13 +8,13 @@
 }
   
   
-  .title__profile:hover {
+.title__profile:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 15px 15px 15px;
   transform: translateY(-4px);
   transform: translateX(-4px);
 }
   
-  .title__profile:active {
+.title__profile:active {
   box-shadow: none;
   transform: translateY(0);
-  }
+}

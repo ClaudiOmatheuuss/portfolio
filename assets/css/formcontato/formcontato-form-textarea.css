@@ -1,0 +1,29 @@
+.formcontato__textarea{
+    background-color: #fff;
+    border-style: none;
+    border-bottom: 2px solid #C8C8C8;
+    border-radius: 10px;
+    color: #C8C8C8;
+    margin-bottom: 1.713rem;
+    height: 3.5rem;
+    padding: 2rem 0 0px 1rem;
+    transition: .6s all ease-out;
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+textarea::placeholder{
+    color: #C8C8C8;
+    font-family: var(--fonte-padrao);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+textarea:focus::placeholder{
+    transition: .2s all ease-in;
+    transform: translateY(-90%);
+    color: #2A7AE4;
+}

@@ -1,0 +1,26 @@
+.formcontato__botao{
+    border: 2px solid #2A7AE4;
+    background: #2A7AE4;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: var(--fonte-padrao);
+    font-size: .9rem;
+    font-weight: 500;
+    height: 3.1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: .5s all linear;
+    width: 25.15%;
+}
+
+.formcontato__botao:hover{
+    background: #5595E9;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
+}
+
+.formcontato__botao:focus{
+    background: #5595E9;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
+    outline: none;
+}

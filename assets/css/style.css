@@ -24,12 +24,31 @@ body {
 ol, ul,li {
     list-style: none;
 }
+h2, h3 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-padrao-texto);
+}
 a{
     color: var(--cor-de-link);
     cursor: pointer;
     text-decoration: none;
 }
-
+input:focus{
+    border-bottom: 2px solid #2A7AE4;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
+    color: #2A7AE4;
+    outline: none;
+    transform: translateY(-2px);
+    transform: translateX(-2px);
+}
+textarea:focus{
+    border-bottom: 2px solid #2A7AE4;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
+    color: #2A7AE4;
+    outline: none;
+    transform: translateY(-2px);
+    transform: translateX(-2px);
+}
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
@@ -111,7 +130,11 @@ section.experience{
 /*Contato*/
 
 section.formcontato{
-
+    background-color: #EAF2FD;
+    display: block;
+    height: 62%;
+    margin-top: 2rem;
+    padding: 4rem;
 }
 
 /*footeer*/
@@ -120,6 +143,8 @@ section.footer{
    
 }
 
+
+/*estilos de scroll*/
 body::-webkit-scrollbar {
     width: 12px;              
 }

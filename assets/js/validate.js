@@ -1,6 +1,9 @@
 window.onscroll = function() {
     scrollFunction();
 }
+textarea.onscroll = function(){
+    scrollFunctionTextarea();
+}
   
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

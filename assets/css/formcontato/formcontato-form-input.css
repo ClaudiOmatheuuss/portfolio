@@ -1,0 +1,24 @@
+.formcontato__input{
+    background-color: #fff;
+    border-style: none;
+    border-bottom: 2px solid #C8C8C8;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    height: 3.5rem;
+    padding: 3px 0 3px 1rem;
+    transition: .6s all ease-out;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #C8C8C8;
+    font-family: var(--fonte-padrao);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+input:focus::placeholder{
+    transition: .2s all ease-in;
+    color: #2A7AE4;
+    transform: translateY(-1rem);
+}
