@@ -144,7 +144,14 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
-   
+    color: var(--cor-padrao-texto);
+    display: block;
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
 }
 
 
@@ -154,7 +161,7 @@ body::-webkit-scrollbar {
 }
   
 body::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--cor-padrao-texto);
 }
   
 body::-webkit-scrollbar-thumb {
