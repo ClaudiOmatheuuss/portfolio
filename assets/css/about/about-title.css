@@ -2,4 +2,5 @@
     font-family: var(--fonte-padrao);
     font-size: 2rem;
     font-weight: bold;
+    width: 100%;
 }

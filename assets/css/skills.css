@@ -3,7 +3,8 @@
     flex-direction: column;
     height: 15.25rem;
     justify-content: center;
-    margin-bottom: 5.5rem;
+    padding-top: 7rem;
+    padding-bottom: 5.5rem;
     text-align: center;
     width: 90%;
 }

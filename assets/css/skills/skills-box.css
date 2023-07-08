@@ -1,13 +1,11 @@
 .skills__box{
     display: flex;
-    flex-direction: column;
     text-align: left;
-    justify-content: flex-end;
     padding: 0, 1rem, 1rem, 0;
-    height: 11rem;
+    max-height: 20vh;
     margin-left: 2rem;
     transition: .25s all linear;
-    width: 15rem;
+    max-width: 20vh;
 }
 
 .skills__box:hover{

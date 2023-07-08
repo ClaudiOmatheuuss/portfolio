@@ -1,5 +1,7 @@
 .about__container{
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 4rem;
     height: 15.838rem;
-    width: var(--tamanho-padrao-container);
+    width: 100%;
 }

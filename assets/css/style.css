@@ -101,8 +101,7 @@ section.about{
 /*Sessão Hobbies*/
 
 section.hobbies{
-    display: flex;
-    flex-direction: column;
+    display: block;
     height: 15.25rem;
     justify-content: center;
     margin-bottom: 5.5rem;
@@ -199,7 +198,7 @@ body::-webkit-scrollbar:active {
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 /* Menu */
 
@@ -216,19 +215,196 @@ utilize como referência os breakpoints @media abaixo*/
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
-
+@media (max-width: 425px) {
+body{
+    display: block;
+}
 /*Menu*/
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav{
+    width: 40%;
+}
+
+.menu__list{
+    width: 2%;
+}
+
+.menu__list__item{
+    display: none;
+    width: 2%;
+}
+
+.menu__list__item:last-child{
+    display: inline-block;
+    margin-left: 2rem;
+}
 
 /*Titulo*/
+section.title{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.title__div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding: 1rem;
+    padding-left: 2rem;
+    width: 320px;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 328px;
+}
+
+.title__bio{
+    font-size: 24px;
+}
+
+.title__subsection{
+    font-size: 14px;
+}
+
+.title__network{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title__network__item{
+    margin-top: 1.5em;
+}
+
+.title__profile{
+    display: flex;
+    filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.75));
+    height: 268px;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+    text-align: center;
+    width: 268px;
+}
 
 /*Sessão sobre*/
+section.about{
+    display: block;
+    background-color: #EAF2fd;
+    text-align: justify;
+    margin-top: 55rem;
+    padding: 1rem;
+}
+
+#sobremim{
+    display: block;
+    background-color: #EAF2FD;
+}
+
+.about__container{
+    display: flex;
+    justify-content: center;
+}
+
+.about__title{
+    font-size: 22px;
+}
+
+.about__paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EAF2FD;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+#imagem__assinatura{
+    display: none;
+}
 
 /*Skills*/
+section.skills{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 0;
+    text-align: left;
+    width: 350px;
+}
 
+.skills__line{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.skills__box{
+    margin-top: 32px;
+}
 /*Hobbies*/
- 
+section.hobbies{
+    display: block;
+    position: relative;
+    margin-top: 15rem;
+    width: 350px;
+    height: 500px;
+}
+
+.hobbies__line{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+
+.hobbies__box{
+    margin-top: 2em;
+    padding: 0;
+    margin-left: 1em;
+    justify-content: flex-start;
+    width: 80px;
+} 
 /*Formação Acadêmica*/
+section.academic{
+    height: 1375px;
+    padding: 2em;
+    padding-left: 0;
+}
+
+.academic__title{
+    text-align: center;
+}
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 18.5rem;
+}
+
+.academic__courses__box{
+    margin: 3rem 0;
+    margin-top: 0;
+}
 
 /*Experiência Profissional*/
 
