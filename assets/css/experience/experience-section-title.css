@@ -1,5 +1,6 @@
 .experience__section__title{
     color: var(--cor-padrao-texto);
+    display: block;
     font-family: var(--fonte-padrao);
     font-size: 1.563rem;
     font-weight: bold;

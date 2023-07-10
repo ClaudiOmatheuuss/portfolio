@@ -1,4 +1,8 @@
 .experience__info{
+    align-items: flex-start;
+    display: flex;
     flex-direction: column;
-    width: 30.6%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-width: 30%;
 }

@@ -1,5 +1,15 @@
-.experiencie__box{
+.experience__box{
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+#experience__box__apeperia{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 4rem;
     max-width: 100%;

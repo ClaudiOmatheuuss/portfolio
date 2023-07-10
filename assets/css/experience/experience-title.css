@@ -1,6 +1,9 @@
 #experience__title{
     color: var(--cor-padrao-texto);
     font-family: var(--fonte-padrao);
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
 }

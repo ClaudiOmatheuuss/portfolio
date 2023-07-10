@@ -1,5 +1,5 @@
 .formcontato__text{
     display: flex;
     flex-direction: column;
-    width: 41rem;
+    width: 100vh;
 }

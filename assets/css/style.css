@@ -112,23 +112,18 @@ section.hobbies{
 /* Experiência Acadêmica*/
 
 section.academic{
-    align-items: center;
     background-color: #EAF2FD;
     display: block;
     margin: 7rem auto;
-    padding: 4rem 0;
+    padding: 4rem 3rem;
     position: relative;
     text-align: center;
-    width: 100%;
 }
 
 /* experiência*/
 
 section.experience{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
     margin: 2rem 5%;
     width: 90%;
 }
@@ -304,15 +299,15 @@ section.title{
 section.about{
     display: block;
     background-color: #EAF2fd;
+    height: 36.25rem;
     text-align: justify;
-    margin-top: 55rem;
-    padding: 1rem;
-    width: 320px;
+    margin-top: 58rem;
+    padding: 2rem;
 }
 
 #sobremim{
-    display: block;
     background-color: #EAF2FD;
+    display: flex;
 }
 
 .about__container{
@@ -347,6 +342,10 @@ section.skills{
     width: 350px;
 }
 
+.skills__title{
+    font-size: 22px;
+}
+
 .skills__line{
     align-items: center;
     display: flex;
@@ -370,6 +369,10 @@ section.hobbies{
     margin-top: 18rem;
     width: 350px;
     height: 500px;
+}
+
+.hobbies__title{
+    font-size: 22px;
 }
 
 .hobbies__line{
@@ -412,11 +415,6 @@ section.academic{
 }
 
 /*Experiência Profissional*/
-section.experience{
-    display: flex;
-    flex-direction: column;
-}
-
 .experience__section__title{
     font-size: 22px;
     line-height: 26px;
@@ -424,21 +422,25 @@ section.experience{
 
 .experience__box{
     align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 5rem;
     width: 18.5rem;
 }
 
-.experience__box__apeperia{
+#experience__box__apeperia{
     align-items: flex-start;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
     width: 18.5rem;
 }
 
-#experience__title{
-    font-size: 10px;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-    text-align: left;
+.experience__info{
+    font-size: 8px;
+    font-weight: 500;
+    padding: 0 auto;
+    width: 100%;
 }
 
 .experience__description{
@@ -446,7 +448,15 @@ section.experience{
 }
 
  /*Contato*/
-.formcontato__img{
+#contato{
+   justify-content: center;
+}
+
+ .formcontato__text{
+    width: 100%;
+ }
+ 
+ .formcontato__img{
     display: none;
 }
 
