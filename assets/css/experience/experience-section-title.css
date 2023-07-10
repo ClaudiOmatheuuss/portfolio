@@ -1,8 +1,8 @@
 .experience__section__title{
     color: var(--cor-padrao-texto);
     font-family: var(--fonte-padrao);
-    font-size: 2rem;
+    font-size: 1.563rem;
     font-weight: bold;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
 }

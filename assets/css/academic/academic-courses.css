@@ -1,4 +1,4 @@
 .academic__courses{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }

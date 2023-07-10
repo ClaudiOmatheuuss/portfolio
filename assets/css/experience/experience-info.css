@@ -1,3 +1,4 @@
 .experience__info{
+    flex-direction: column;
     width: 30.6%;
 }
