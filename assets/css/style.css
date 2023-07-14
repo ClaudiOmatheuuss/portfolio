@@ -451,7 +451,6 @@ section.title{
 }
 
 .title__network{
-    align-items: center;
     flex-direction: column;
     width: 100%;
 }
