@@ -217,10 +217,6 @@ nav{
     width: 10%;
 }
     
-.menu__list{
-    width: 10%;
-}
-    
 .menu__list__item{
     display: none;
     width: 10%;
@@ -243,8 +239,6 @@ section.title{
     
 .title__container{
     align-items: flex-start;
-    display: flex;
-    flex-direction: row;
     position: relative;
     width: 60%;
 }
@@ -253,18 +247,10 @@ section.title{
     display: flex;
     align-items: flex-start;
     text-align: top;
-    font-size: 20px;
     width: 100%;
 }
-    
-.title__subsection{
-    font-size: 12px;
-    width: 80%;
-}
-    
+        
 .title__network{
-    display: flex;
-    justify-content: space-around;
     width: 100vh;
 }
     
@@ -293,12 +279,7 @@ section.about{
 }
     
 .about__container{
-    display: flex;
     justify-content: flex-start;
-}
-    
-.about__title{
-    font-size: 22px;
 }
     
 .about__paragraph{
@@ -324,17 +305,10 @@ section.skills{
     margin: 1rem 0;
     width: 100%;
 }
-    
-.skills__title{        
-    font-size: 22px;
-}
-    
+        
 .skills__line{
-    align-items: center;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     text-align: left;
     width: 100vh;
 }
@@ -352,16 +326,9 @@ section.hobbies{
     width: 100%;
 }
     
-.hobbies__title{        
-    font-size: 22px;
-}
-    
 .hobbies__line{
-    align-items: center;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     text-align: left;
     width: 100vh;
 }
@@ -419,20 +386,8 @@ section.experience{
 .experience__img{
     width: 25rem;
 }
-    
-.experience__description{
-    display: flex;
-}
-    
-/*Contato*/
-#contato{
-    justify-content: center;
-}
-    
-.formcontato__text{
-    width: 100%;
-}
-     
+        
+/*Contato*/     
 .formcontato__img{
     display: none;
 }
@@ -482,10 +437,7 @@ section.title{
     width: 100%;
 }
 .title__div{
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 0;
     padding: 1rem;
     padding-left: 2rem;
@@ -493,29 +445,19 @@ section.title{
 }
 
 .title__container{
-    display: flex;
-    flex-direction: column;
     margin-right: 15%;
     position: relative;
     width: 85%;
 }
 
-.title__bio{
-    font-size: 24px;
-}
-
-.title__subsection{
-    font-size: 14px;
-}
-
 .title__network{
-    display: flex;
     flex-direction: column;
     width: 90%;
 }
 
 .title__network__item{
     margin-top: 1.5em;
+    width: 70%;
 }
 
 .title__profile{
@@ -548,10 +490,6 @@ section.about{
     justify-content: center;
 }
 
-.about__title{
-    font-size: 22px;
-}
-
 .about__paragraph{
     display: flex;
     flex-wrap: wrap;
@@ -575,18 +513,10 @@ section.skills{
     width: 350px;
 }
 
-.skills__title{
-    font-size: 22px;
-}
-
 .skills__line{
-    align-items: center;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     text-align: left;
-    width: 100%;
 }
 
 .skills__box{
@@ -604,23 +534,14 @@ section.hobbies{
     height: 500px;
 }
 
-.hobbies__title{
-    font-size: 22px;
-}
-
 .hobbies__line{
-    align-items: center;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
-    width: 100%;
 }
 
 .hobbies__box{
     margin-top: 2em;
     padding: 0;
-    margin-left: 1em;
     width: 6.25rem;
 } 
 /*Formação Acadêmica*/
@@ -630,14 +551,8 @@ section.academic{
     padding-left: 0;
 }
 
-.academic__title{
-    text-align: center;
-}
-
 .academic__courses{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
 }
 
@@ -648,7 +563,6 @@ section.academic{
 
 /*Experiência Profissional*/
 .experience__section__title{
-    font-size: 22px;
     line-height: 26px;
 }
 
@@ -660,7 +574,6 @@ section.academic{
 }
 
 #experience__box__apeperia{
-    align-items: flex-start;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -675,19 +588,7 @@ section.academic{
     width: 100%;
 }
 
-.experience__description{
-    display: flex;
-}
-
  /*Contato*/
-#contato{
-   justify-content: center;
-}
-
- .formcontato__text{
-    width: 100%;
- }
- 
  .formcontato__img{
     display: none;
 }
