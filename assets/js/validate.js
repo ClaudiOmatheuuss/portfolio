@@ -1,9 +1,6 @@
 window.onscroll = function() {
     scrollFunction();
 }
-textarea.onscroll = function(){
-    scrollFunctionTextarea();
-}
   
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -13,7 +10,7 @@ function scrollFunction() {
     }
 }
   
-//Seu JavaScript de validação aqui
+//JavaScript de validação
 const formulario = document.querySelector('formcontato__form');
 const campoNome = document.getElementById('#nome');
 const campoEmail = document.getElementById('#email');

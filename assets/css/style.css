@@ -197,19 +197,252 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
 @media (max-width: 768px) {
+body{
+    display: block;
+}
+header{
+    font-size: 2rem;
+}
+/*Menu*/
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+    
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    width: 10%;
+}
+    
+.menu__list{
+    width: 10%;
+}
+    
+.menu__list__item{
+    display: none;
+    width: 10%;
+}
+    
+.menu__list__item:last-child{
+    display: inline-block;
+}
+    
+/*Titulo*/
+section.title{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.title__div{
+    margin: 0;
+    width: 100%;
+}
+    
+.title__container{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 60%;
+}
+    
+.title__bio{
+    display: flex;
+    align-items: flex-start;
+    text-align: top;
+    font-size: 20px;
+    width: 100%;
+}
+    
+.title__subsection{
+    font-size: 12px;
+    width: 80%;
+}
+    
+.title__network{
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+}
+    
+.title__network__item{
+    margin-top: 1.5em;
+    width: 20%;
+}
+    
+.title__profile{
+    display: flex;
+    filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.75));
+    height: 18rem;
+    width: 18rem;
+}
+    
+/*Sessão sobre*/
+section.about{
+    text-align: justify;
+    padding: 4rem;
+    margin-bottom: 0;
+}
+    
+#sobremim{
+    align-items: flex-start;
+    background-color: #EAF2FD;
+}
+    
+.about__container{
+    display: flex;
+    justify-content: flex-start;
+}
+    
+.about__title{
+    font-size: 22px;
+}
+    
+.about__paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EAF2FD;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 14px;
+}
 
-/* Menu */
-
-/*title*/
-
+    
+#imagem__assinatura{
+    margin-top: 1rem;
+    display: block;
+}
+    
 /*Skills*/
-
+section.skills{
+    align-items: center;
+    display: block;
+    position: relative;
+    margin: 1rem 0;
+    width: 100%;
+}
+    
+.skills__title{        
+    font-size: 22px;
+}
+    
+.skills__line{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100vh;
+}
+    
+.skills__box{
+    margin-top: 1.2rem;
+    width: 9rem;
+}
+    
 /*Hobbies*/
+section.hobbies{
+    align-items: center;
+    display: block;
+    margin: 8rem auto;
+    width: 100%;
+}
+    
+.hobbies__title{        
+    font-size: 22px;
+}
+    
+.hobbies__line{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100vh;
+}
+    
+.hobbies__box{
+    margin-top: 1.2rem;
+    width: 9rem;
+}
+/*Formação Acadêmica*/
+section.academic{
+    padding: 2em;
+    padding-left: 0;
+}
+    
+.academic__courses{
+    flex-wrap: wrap;
+    width: 100%;
+}
+ 
+.academic__courses__box{
+    margin: 3rem 0;
+    margin-top: 0;
+}
+    
+/*Experiência Profissional*/
+section.experience{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/*Experiências acadêmicas*/
+.experience__section__title{
+    line-height: 26px;
+}
+    
+.experience__box{
+    flex-direction: column;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+    
+#experience__box__apeperia{
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+    
+.experience__info{
+    font-size: 8px;
+    font-weight: 500;
+    width: 65%;
+}
 
-/*Expeirência profissional*/
-
+.experience__img{
+    width: 25rem;
+}
+    
+.experience__description{
+    display: flex;
+}
+    
+/*Contato*/
+#contato{
+    justify-content: center;
+}
+    
+.formcontato__text{
+    width: 100%;
+}
+     
+.formcontato__img{
+    display: none;
+}
+    
+#formcontato__botao{
+    padding: 2%;
+    width: 35%;
+}
+    
+/*Footer*/
 }
 
 /*Mobile*/
@@ -278,7 +511,7 @@ section.title{
 .title__network{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
 }
 
 .title__network__item{
@@ -358,7 +591,7 @@ section.skills{
 
 .skills__box{
     margin-top: 32px;
-    margin-left: 1em;
+    width: 6.25rem;
 }
 
 /*Hobbies*/
@@ -388,8 +621,7 @@ section.hobbies{
     margin-top: 2em;
     padding: 0;
     margin-left: 1em;
-    justify-content: flex-start;
-    width: 80px;
+    width: 6.25rem;
 } 
 /*Formação Acadêmica*/
 section.academic{
@@ -466,5 +698,4 @@ section.academic{
 }
 
 /*Footer*/
-
 }
