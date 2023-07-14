@@ -30,3 +30,6 @@ Portfolio foi desenvolvido com HTML, CSS e JavaScript.
 
 
 Visite meu Deploy: https://claudiomatheuuss.github.io/portfolio/
+
+
+Deploy alternativo: https://claudiopersonalwebsite.vercel.app/
