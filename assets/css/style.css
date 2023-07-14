@@ -477,7 +477,7 @@ section.about{
     background-color: #EAF2fd;
     height: 36.25rem;
     text-align: justify;
-    margin-top: 58rem;
+    margin-top: 47rem;
     padding: 2rem;
 }
 
@@ -511,7 +511,7 @@ section.skills{
     position: relative;
     margin: 1rem 0;
     text-align: center;
-    width: 350px;
+    width: 100%;
 }
 
 .skills__line{
