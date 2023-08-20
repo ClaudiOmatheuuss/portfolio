@@ -29,7 +29,7 @@ Portfolio foi desenvolvido com HTML, CSS e JavaScript.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Visite meu Deploy: https://claudiomatheuuss.github.io/portfolio/
+Visite meu Deploy: https://claud10matheus.github.io/portfolio/
 
 
 Deploy alternativo: https://claudiopersonalwebsite.vercel.app/
