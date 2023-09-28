@@ -27,6 +27,7 @@ Portfolio foi desenvolvido com HTML, CSS e JavaScript.
       Mensagem.
     Deve ter um rodapé com as informações da pessoa que desenvolveu o portfólio;
 ----------------------------------------------------------------------------------------------------------------------------------------
+figma a ser seguido: https://www.figma.com/file/HGbl4OcmbHBn19Ij0COJdH/Challenge-Front-end-Portf%C3%B3lio-(Copy)?type=design&node-id=85-295&mode=design&t=vlzCJPKm30VzP94U-0
 
 
 Visite meu Deploy: https://ClaudiOmatheuuss.github.io/portfolio/
