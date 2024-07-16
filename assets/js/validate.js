@@ -11,7 +11,7 @@ function scrollFunction() {
 }
   
 //JavaScript de validação
-const formulario = document.querySelector('formcontato__form');
+const formulario = document.querySelector('.formcontato__form');
 const campoNome = document.getElementById('#nome');
 const campoEmail = document.getElementById('#email');
 const campoAssunto = document.getElementById('#assunto');

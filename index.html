@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/menu/mobile-menu.css">
     <link rel="stylesheet" href="assets/css/menu/menu-title.css">
     <link rel="stylesheet" href="assets/css/menu/menu-list.css">
     <link rel="stylesheet" href="assets/css/menu/menuList-item.css">
@@ -61,62 +63,126 @@
 
     <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    
+
     <link rel="icon" href="assets/img/icon-site.png" type="image/x-icon">
     <title>Claudio Matheus</title>
 </head>
+
 <body>
-    <!-- Sessão de Menu  -->
     <div class="all">
-    <section class="menu">
-        <header>
-            <img src="assets/img/vector.png" width="22px" height="22px">
-            <p class="menu__title">Claudio Matheus</p>
-        </header>
-            <nav>
+        <!-- Sessão de Menu  -->
+        <section class="menu">
+            <header>
+                <img src="assets/img/vector.png" width="22px" height="22px">
+                <p class="menu__title">Claudio Matheus</p>
+            </header>
+
+            <nav class="default_nav">
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
                     <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
+                    <li class="menu__list__item"><a href="#formacao">Formação</a></li>
                     <li class="menu__list__item"><a href="#xp">Experiência</a></li>
                     <li class="menu__list__item__contato menu__list__item"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-    </section>
 
-<!-- Sessão de Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets/img/profile.png" height="368px" width="368px">
-            <div class="title__container" id="#sobremim">
-                <h2 class="title__bio">Olá, meu nome é Claudio Matheus e construo páginas web</h2>
-                <h3 class="title__subsection">Eu sou formado Técnico em Desenvolvimento de Sistemas e atualmente estou participando no programa ONE da Oracle em parceria com a Alura.</h3>
-                <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a class="botao" href="https://github.com/ClaudiOmatheuuss" target="_blank">Github <img src="assets/img/github-logo.png" class="title__network__item-botao" alt="Logo do github"> </a></li>
-                    <li class="title__network__item"><a class="botao" href="https://www.linkedin.com/in/cl%C3%A1udio-matheus-dev1/" target="blank">Linkedin <img src="assets/img/linkedin-logo.png" class="title__network__item-botao" alt="Logo do linkedin"></a></li>
-                    <li class="title__network__item"><a class="botao"  href="https://www.instagram.com/claudiomatheuuss/" target="blank">Instagram <img src="assets/img/instagram-logo.png" class="title__network__item-botao" alt="Logo do Instagram"></a></li>
-                    <li class="title__network__item"><a class="botao" href="">Curriculo <img src="assets/img/curriculo-logo.png" class="title__network__item-botao" alt="Meu curriculo"></a></li>
+            <nav class="mobile_nav">
+
+                <ul class="nav-menu">
+                    <li class="menu__list__item nav-menu-item-mobile">
+                        <a href="#sobremim"><img src="./assets/img/sobre_mim.png" alt="sobre mim"></a>
+                        <a href="#sobremim">Sobre mim</a>
+                    </li>
+
+                    <li class="menu__list__item nav-menu-item-mobile">
+                        <a href="#skills"><img src="./assets/img/skills.png" alt="skills"></a>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li class="menu__list__item nav-menu-item-mobile">
+                        <a href="#hobbies"><img src="./assets/img/hobbies.png" alt="hobbies"></a>
+                        <a href="#hobbies">Hobbies</a>
+                    </li>
+
+                    <li class="menu__list__item nav-menu-item-mobile">
+                        <a href="#formacao"><img src="./assets/img/formacao.png" alt="formação"></a>
+                        <a href="#formacao">Formação</a>
+                    </li>
+
+                    <li class="menu__list__item nav-menu-item-mobile">
+                        <a href="#xp"><img src="./assets/img/experiencia.png" alt="experiência"></a>
+                        <a href="#xp">Experiência</a>
+                    </li>
+
+                    <li class="menu__list__item nav-menu-item-mobile">
+                        <a href="#contato"><img src="./assets/img/contact.png" alt="contato"></a>
+                        <a href="#contato">Contato</a>
+                    </li>
                 </ul>
+
+                <div class="hamburguer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Sessão de Header/Title/Hero -->
+        <section class="title">
+            <div class="title__div">
+                <img class="title__profile" src="assets/img/profile.png" height="368px" width="368px">
+                <div class="title__container" id="#sobremim">
+                    <h2 class="title__bio">Olá, meu nome é Claudio Matheus e construo páginas web</h2>
+                    <h3 class="title__subsection">Eu sou formado Técnico em Desenvolvimento de Sistemas e atualmente
+                        estou participando no programa ONE da Oracle em parceria com a Alura.</h3>
+                    <ul class="title__network">
+                        <!-- Ponha os links de suas redes sociais favoritas -->
+                        <li class="title__network__item"><a class="botao" href="https://github.com/ClaudiOmatheuuss"
+                                target="_blank">Github <img src="assets/img/github-logo.png"
+                                    class="title__network__item-botao" alt="Logo do github"> </a></li>
+                        <li class="title__network__item"><a class="botao"
+                                href="https://www.linkedin.com/in/cl%C3%A1udio-matheus-dev1/" target="blank">Linkedin
+                                <img src="assets/img/linkedin-logo.png" class="title__network__item-botao"
+                                    alt="Logo do linkedin"></a></li>
+                        <li class="title__network__item"><a class="botao"
+                                href="https://www.instagram.com/claudiomatheuuss/" target="blank">Instagram <img
+                                    src="assets/img/instagram-logo.png" class="title__network__item-botao"
+                                    alt="Logo do Instagram"></a></li>
+                        <li class="title__network__item"><a class="botao" href="">Curriculo <img
+                                    src="assets/img/curriculo-logo.png" class="title__network__item-botao"
+                                    alt="Meu curriculo"></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <!-- Sessão sobre mim -->
-    <section class="about">
-        <div class="about__container" id="sobremim">
-            <h3 class="about__title">Sobre mim</h3>
-            <p class="about__paragraph">Tenho 18 anos, sou brasileiro e resido em Belo Jardim, Pernambuco. Desenvolvedor especializado em front-end e completamente fascinado pela área de programação e tecnologia. Sou um bom auto-didata, gosto de trabalhar em equipe e estou sempre buscando novos conhecimentos na área, bem como, meu aprimoramento pessoal, profissional e intelectual.</p>
-            <p class="about__paragraph">Tive meus primeiros contatos com programação já no ensino médio graças ao curso técnico integrado que me formou técnico em Desenvolvimento de sistemas, posteriormente, ingressei na UFRPE onde curso Bacharelado em Engenharia Química ao mesmo tempo que continuo me identificando muito e com muito carinho pela área de tecnologia e programação. Contudo, decidi mudar de área e para me auxiliar nisso me inscrevi no programa ONE da Oracle em parceria com a Alura programa no qual sou aluno graças a parceria da Baterias Moura juntamente com a Oracle para oferecimento das bolsas e estou me aprimorando e buscando novos conhecimentos a cada dia afim de concluir a formação de Desenvolvedor Front-end.</p>
-            <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-            <img src="assets/img/signature.png" id="imagem__assinatura">
-        </div>
-    </section>
+        <section class="about">
+            <div class="about__container" id="sobremim">
+                <h3 class="about__title">Sobre mim</h3>
+                <p class="about__paragraph">Tenho 18 anos, sou brasileiro e resido em Belo Jardim, Pernambuco.
+                    Desenvolvedor especializado em front-end e completamente fascinado pela área de programação e
+                    tecnologia. Sou um bom auto-didata, gosto de trabalhar em equipe e estou sempre buscando novos
+                    conhecimentos na área, bem como, meu aprimoramento pessoal, profissional e intelectual.</p>
+                <p class="about__paragraph">Tive meus primeiros contatos com programação já no ensino médio graças ao
+                    curso técnico integrado que me formou técnico em Desenvolvimento de sistemas, posteriormente,
+                    ingressei na UFRPE onde curso Bacharelado em Engenharia Química ao mesmo tempo que continuo me
+                    identificando muito e com muito carinho pela área de tecnologia e programação. Contudo, decidi mudar
+                    de área e para me auxiliar nisso me inscrevi no programa ONE da Oracle em parceria com a Alura
+                    programa no qual sou aluno graças a parceria da Baterias Moura juntamente com a Oracle para
+                    oferecimento das bolsas e estou me aprimorando e buscando novos conhecimentos a cada dia afim de
+                    concluir a formação de Desenvolvedor Front-end.</p>
+                <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
+                <img src="assets/img/signature.png" id="imagem__assinatura">
+            </div>
+        </section>
 
-    <!-- Sessão de Skills/Habilidades -->
-    <section class="skills">
-        <h3 class="skills__title" id="skills">Skills</h3>
+        <!-- Sessão de Skills/Habilidades -->
+        <section class="skills">
+            <h3 class="skills__title" id="skills">Skills</h3>
             <div class="skills__line">
                 <div class="skills__box">
                     <ul>
@@ -159,30 +225,33 @@
                         <li class="skills__name">CSS</li>
                     </ul>
                 </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-<!-- Sessão de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
+        <!-- Sessão de Hobbies -->
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
             <div class="hobbies__line">
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets/img/bus_icon.png" alt="icone de ônibus" height="36px"></li>
+                        <li class="hobbies__img"><img src="assets/img/bus_icon.png" alt="icone de ônibus" height="36px">
+                        </li>
                         <li class="hobbies__name"> Viajar</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets/img/soccer-icon.png" alt="icone de bola de futebol" height="36px"></li>
+                        <li class="hobbies__img"> <img src="assets/img/soccer-icon.png" alt="icone de bola de futebol"
+                                height="36px"></li>
                         <li class="hobbies__name">Jogar futebol</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets/img/headphones_icon.png" width="30px" height="30px" alt="icone de fone"></li>
+                        <li class="hobbies__img"> <img src="assets/img/headphones_icon.png" width="30px" height="30px"
+                                alt="icone de fone"></li>
                         <li class="hobbies__name">Ouvir música</li>
                     </ul>
                 </div>
@@ -196,7 +265,8 @@
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets/img/forkspoon_icon.png" alt="icone de cozinhar"> </li>
+                        <li class="hobbies__img"> <img src="assets/img/forkspoon_icon.png" alt="icone de cozinhar">
+                        </li>
                         <li class="hobbies__name">Cozinhar</li>
                     </ul>
                 </div>
@@ -207,114 +277,147 @@
                         <li class="hobbies__name">Tirar fotos</li>
                     </ul>
                 </div>
-        </div>
-    </section>
-
-    <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
-        <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><a href="assets/img/courses/formacao_front-end.png" target="_blank"><img src="assets/img/alura-logo.png" width="300px" height="250px"></a></li>
-                    <li class="academic__courses__item__title"><h4>Formação Front-end</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Alura - Em andamento</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="assets/img/ufrpe-logo.jpg" width="300px" height="250px"></li>
-                    <li class="academic__courses__item__title"><h4>Engenharia Química</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>UFRPE - Em andamento</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><a href="assets/img/courses/formacao_business-agility-Alura.pdf" target="_blank"><img src="assets/img/alura-logo.png" width="300px" height="250px"></a></li>
-                    <li class="academic__courses__item__title"><h4>Formação Business Agility</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Alura - Concluido</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-        <div class="experience__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/img/print_encriptador.png">
-            <div class="experience__info">
-                <h2 id="experience__title">Encriptador de texto</h2>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/ClaudiOmatheuuss/encriptador-de-texto" target="_blank"><button class="experience__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://claudiomatheuuss.github.io/encriptador-de-texto/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>
-        
-        <div class="experiencie__box" id="experience__box__apeperia">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/img/print_apeperia.png">
-            <div class="experience__info">
-              <h2 id="experience__title">Apeperia</h2>
-              <div class="experience__description">
-                  <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                  <span class="experience__repo"><a href="https://github.com/ClaudiOmatheuuss/apeperia" target="_blank"><button class="experience__botao--repo">Repositório</button></a></span>
-                  <span class="experience__demo"><a href="https://claudiomatheuuss.github.io/apeperia/" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
-              </div>
-         </div>
-        </div>
-
-        <div class="experience__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/img/print_fruta-e-fruto.png">
-            <div class="experience__info">
-                <h2 id="experience__title">Site de Receitas</h2>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/ClaudiOmatheuuss/fruta_e_fruto" target="_blank"><button class="experience__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://claudiomatheuuss.github.io/fruta_e_fruto/#quem-somos" target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-        </div>
-    </section>
-        <!-- Sessão de Contato -->
-        <section class="formcontato">
-            <div id="contato" class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets/img/contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                    <form class="formcontato__form" action="https://formsubmit.co/claudiom.pst@gmail.com" method="POST">
-                        <input class="formcontato__input" type="text" name="nome" id="nome" placeholder="Nome" required maxlength="50">
-                        <input class="formcontato__input" type="email" name="email" id="email" placeholder="Email" required>
-                        <input class="formcontato__input" type="text" name="_subject" id="assunto" placeholder="Assunto" required maxlength="50">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required maxlength="300"></textarea>
-                        <button class="formcontato__botao" id="formcontato__botao" type="submit">Enviar mensagem</button>
-                    </form>
-                </div>
             </div>
         </section>
 
-        <!-- Sessão de Footer/Rodapé-->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desenvolvido por Claudio Matheus</p>
-                <p>2023</p>
+        <!-- Sessão de Histórico Acadêmico -->
+        <section class="academic">
+            <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Insira a logo de seu local de formação -->
+                        <li class="academic__courses__item__img"><a href="assets/img/courses/formacao_front-end.png"
+                                target="_blank"><img src="assets/img/alura-logo.png" width="300px" height="250px"></a>
+                        </li>
+                        <li class="academic__courses__item__title">
+                            <h4>Formação Front-end</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>Alura - Em andamento</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Insira a logo de seu local de formação -->
+                        <li class="academic__courses__item__img"><img src="assets/img/ufrpe-logo.jpg" width="300px"
+                                height="250px"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Engenharia Química</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>UFRPE - Em andamento</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Insira a logo de seu local de formação -->
+                        <li class="academic__courses__item__img"><a
+                                href="assets/img/courses/formacao_business-agility-Alura.pdf" target="_blank"><img
+                                    src="assets/img/alura-logo.png" width="300px" height="250px"></a></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Formação Business Agility</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>Alura - Concluido</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
+        <!-- Sessão de Experiência Profissional/Projetos-->
+        <section class="experience">
+            <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
+            <div class="experience__box">
+                <!-- Insira a logo/captura de seu projeto/trabalho -->
+                <img class="experience__img" src="assets/img/print_encriptador.png">
+                <div class="experience__info">
+                    <h2 id="experience__title">Encriptador de texto</h2>
+                    <div class="experience__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <span class="experience__repo"><a
+                                href="https://github.com/ClaudiOmatheuuss/encriptador-de-texto" target="_blank"><button
+                                    class="experience__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a
+                                href="https://claudiomatheuuss.github.io/encriptador-de-texto/" target="_blank"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experiencie__box" id="experience__box__apeperia">
+                <!-- Insira a logo/captura de seu projeto/trabalho -->
+                <img class="experience__img" src="assets/img/print_apeperia.png">
+                <div class="experience__info">
+                    <h2 id="experience__title">Apeperia</h2>
+                    <div class="experience__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <span class="experience__repo"><a href="https://github.com/ClaudiOmatheuuss/apeperia"
+                                target="_blank"><button class="experience__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a href="https://claudiomatheuuss.github.io/apeperia/"
+                                target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box">
+                <!-- Insira a logo de seu projeto/trabalho -->
+                <img class="experience__img" src="assets/img/print_fruta-e-fruto.png">
+                <div class="experience__info">
+                    <h2 id="experience__title">Site de Receitas</h2>
+                    <div class="experience__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <span class="experience__repo"><a href="https://github.com/ClaudiOmatheuuss/fruta_e_fruto"
+                                target="_blank"><button class="experience__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a
+                                href="https://claudiomatheuuss.github.io/fruta_e_fruto/#quem-somos"
+                                target="_blank"><button class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- Sessão de Contato -->
+    <section class="formcontato">
+        <div id="contato" class="formcontato__contacto">
+            <div class="formcontato--esquerda">
+                <img class="formcontato__img" src="assets/img/contact_image.png">
+            </div>
+            <div class="formcontato__text">
+                <h2 class="formcontato__title">Contato</h2>
+                <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
+                <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido
+                    possível. </h3>
+                <form class="formcontato__form" action="https://formsubmit.co/claudiomatheuuss01@gmail.com"
+                    method="POST">
+                    <input class="formcontato__input" type="text" name="nome" id="nome" placeholder="Nome" required
+                        maxlength="50">
+                    <input class="formcontato__input" type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="formcontato__input" type="text" name="_subject" id="assunto" placeholder="Assunto"
+                        required maxlength="50">
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
+                        placeholder="Sua mensagem" required maxlength="300"></textarea>
+                    <button class="formcontato__botao" id="formcontato__botao" type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão de Footer/Rodapé-->
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>Desenvolvido por Claudio Matheus</p>
+            <p>2023</p>
+        </div>
+    </section>
     <a id="scrollToTop" href="#top">
         <i class="fa fa-arrow-up"></i>
     </a>
     <!-- Script Linkado do seu documento de JavaScript -->
-    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/validate.js" defer></script>
+    <script src="assets/js/mobile-menu.js" defer></script>
 </body>
+
 </html>
