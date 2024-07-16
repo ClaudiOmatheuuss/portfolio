@@ -45,22 +45,13 @@ a {
     font-weight: 500;
 }
 
-input:focus {
-    border-bottom: 2px solid #2A7AE4;
-    box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
-    color: #2A7AE4;
-    outline: none;
-    transform: translateY(-2px);
-    transform: translateX(-2px);
-}
-
+input:focus,
 textarea:focus {
     border-bottom: 2px solid #2A7AE4;
     box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
     color: #2A7AE4;
     outline: none;
-    transform: translateY(-2px);
-    transform: translateX(-2px);
+    transform: translate(-2px, -2px);
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -92,7 +83,7 @@ section.menu {
 
 section.title {
     display: block;
-    height: 26.5rem;
+    height: auto;
     margin: 0 auto;
     width: var(--tamanho-padrao-container);
 }
@@ -102,20 +93,22 @@ section.title {
 section.about {
     background-color: #EAF2FD;
     display: block;
-    margin: 7rem auto;
-    padding: 4rem 7.5rem;
+    margin-top: 5rem;
+    padding: 4rem 0;
     text-align: left;
 }
 
-/*Sessão Hobbies*/
-
-section.hobbies {
-    display: block;
-    height: 15.25rem;
+/*Sessão Skills e Hobbies*/
+section.skills, section.hobbies {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 5.5rem;
     text-align: center;
-    width: 90%;
+    margin: 1rem auto;
+    width: 100%;
 }
 
 /* Experiência Acadêmica*/
@@ -125,7 +118,6 @@ section.academic {
     display: block;
     margin: 7rem auto;
     padding: 4rem 3rem;
-    position: relative;
     text-align: center;
 }
 
@@ -147,7 +139,7 @@ section.formcontato {
     padding: 4rem;
 }
 
-/*footeer*/
+/*footer*/
 
 section.footer {
     color: var(--cor-padrao-texto);
@@ -159,7 +151,6 @@ section.footer {
     background-color: #fff;
     padding: 2rem;
 }
-
 
 /*estilos de scroll*/
 body::-webkit-scrollbar {
@@ -174,7 +165,6 @@ body::-webkit-scrollbar-thumb {
     background-color: darkcyan;
     border-radius: 15px;
 }
-
 
 body::-webkit-scrollbar:active {
     width: 14.5px;
@@ -200,20 +190,7 @@ body::-webkit-scrollbar:active {
     background: #555;
 }
 
-
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-@media (max-width: 768px) {
-    body {
-        display: block;
-    }
-
-    header {
-        font-size: 2rem;
-    }
-
+@media (max-width: 900px) {
     /*Menu*/
     section.menu {
         display: flex;
@@ -228,19 +205,24 @@ utilize como referência os breakpoints @media abaixo*/
         width: 10%;
     }
 
-    .mobile_nav { display: flex; }
+    .mobile_nav {
+        display: flex;
+    }
 
-    .menu__list__item { width: 10%; }
+    .menu__list__item {
+        width: 10%;
+    }
 
     /*Titulo*/
     section.title {
-        display: block;
         text-align: center;
         width: 100%;
     }
 
     .title__div {
+        flex-wrap: wrap;
         margin: 0;
+        padding: 0;
         width: 100%;
     }
 
@@ -261,23 +243,16 @@ utilize como referência os breakpoints @media abaixo*/
         width: 100vh;
     }
 
-    .title__network__item {
-        margin-top: 1.5em;
-        width: 20%;
-    }
-
     .title__profile {
         display: flex;
         filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.75));
-        height: 18rem;
-        width: 18rem;
+        border-radius: 50%;
+        margin: 0;
     }
 
     /*Sessão sobre*/
     section.about {
         text-align: justify;
-        padding: 4rem;
-        margin-bottom: 0;
     }
 
     #sobremim {
@@ -298,49 +273,20 @@ utilize como referência os breakpoints @media abaixo*/
         font-size: 14px;
     }
 
-
     #imagem__assinatura {
         margin-top: 1rem;
         display: block;
     }
 
-    /*Skills*/
-    section.skills {
-        align-items: center;
-        display: block;
-        position: relative;
-        margin: 1rem 0;
-        width: 100%;
-    }
-
-    .skills__line {
+    /*Skills e Hobbies*/
+    .skills__line, .hobbies__line {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
         width: 100vh;
     }
 
-    .skills__box {
-        margin-top: 1.2rem;
-        width: 9rem;
-    }
-
-    /*Hobbies*/
-    section.hobbies {
-        align-items: center;
-        display: block;
-        margin: 8rem auto;
-        width: 100%;
-    }
-
-    .hobbies__line {
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: left;
-        width: 100vh;
-    }
-
-    .hobbies__box {
+    .skills__box, .hobbies__box {
         margin-top: 1.2rem;
         width: 9rem;
     }
@@ -405,42 +351,13 @@ utilize como referência os breakpoints @media abaixo*/
         width: 35%;
     }
 
-    /*Footer*/
-}
-
-/*Mobile*/
-@media (max-width: 425px) {
-    body {
-        display: block;
-    }
-
-    /*Menu*/
-    section.menu {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .menu__list {
-        width: 2%;
-    }
-
-    .menu__list__item {
-        width: 2%;
-    }
-
     /*Titulo*/
     section.title {
-        display: block;
-        text-align: center;
         width: 100%;
     }
 
     .title__div {
-        flex-wrap: wrap;
         margin-top: 0;
-        padding: 1rem;
-        padding-left: 2rem;
         width: 320px;
     }
 
@@ -451,38 +368,24 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     .title__network {
-        flex-direction: column;
         width: 100%;
+        padding: 0;
+        gap: 32px;
     }
 
     .title__network__item {
         margin-top: 1.5em;
-        width: 70%;
+        width: 180px;
     }
 
     .title__profile {
-        display: flex;
-        filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.75));
-        height: 268px;
-        margin-top: 2rem;
-        margin-right: 2.5rem;
-        text-align: center;
-        width: 268px;
+        height: 200px;
+        width: 200px;
     }
 
     /*Sessão sobre*/
-    section.about {
-        display: block;
-        background-color: #EAF2fd;
-        height: 36.25rem;
-        text-align: justify;
-        margin-top: 47rem;
-        padding: 2rem;
-    }
-
-    #sobremim {
-        background-color: #EAF2FD;
-        display: flex;
+    .about {
+        border-radius: 10%;
     }
 
     .about__container {
@@ -490,12 +393,15 @@ utilize como referência os breakpoints @media abaixo*/
         justify-content: center;
     }
 
+    .about__paragraph,
+    .about__title {
+        padding: 0 15px;
+    }
+
     .about__paragraph {
         display: flex;
         flex-wrap: wrap;
-        background-color: #EAF2FD;
         margin-top: 1rem;
-        margin-bottom: 0;
         font-size: 14px;
     }
 
@@ -504,15 +410,6 @@ utilize como referência os breakpoints @media abaixo*/
     }
 
     /*Skills*/
-    section.skills {
-        align-items: center;
-        display: block;
-        position: relative;
-        margin: 1rem 0;
-        text-align: center;
-        width: 100%;
-    }
-
     .skills__line {
         flex-direction: row;
         flex-wrap: wrap;
@@ -527,19 +424,17 @@ utilize como referência os breakpoints @media abaixo*/
     /*Hobbies*/
     section.hobbies {
         display: block;
-        position: relative;
-        margin-left: 0;
-        margin-top: 18rem;
-        width: 350px;
-        height: 500px;
     }
 
     .hobbies__line {
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        height: auto;
     }
 
     .hobbies__box {
+        text-align: center;
         margin-top: 2em;
         padding: 0;
         width: 6.25rem;
@@ -547,7 +442,7 @@ utilize como referência os breakpoints @media abaixo*/
 
     /*Formação Acadêmica*/
     section.academic {
-        height: 1375px;
+        height: auto;
         padding: 2em;
         padding-left: 0;
     }
@@ -598,15 +493,76 @@ utilize como referência os breakpoints @media abaixo*/
         padding: 2%;
         width: 70%;
     }
-
-    /*Footer*/
 }
 
-/* telas grandes */
-@media (min-width: 769px) {
+@media (min-width: 901px) {
 
-    .default_nav { display: flex; }
+    /* Menu */
+    .mobile_nav {
+        display: none;
+    }
 
-    .mobile_nav { display: none; }
+    .default_nav {
+        display: flex;
+    }
 
+    /*Titulo*/
+    section.title {
+        width: 100%;
+        height: auto;
+    }
+
+    .title__div {
+        flex-direction: row-reverse;
+        margin-bottom: 55px;
+    }
+
+    .title__container {
+        margin-right: 5%;
+        width: 57%;
+    }
+
+    .title__network {
+        margin: 0;
+        padding: 0;
+        gap: 32px;
+    }
+
+    .title__profile {
+        border-radius: 20%;
+    }
+
+    /*Sessão sobre*/
+    .about__container {
+        display: flex;
+        justify-content: left;
+    }
+
+    .about__paragraph,
+    .about__title {
+        padding: 0 135px;
+    }
+
+    .about__paragraph {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        font-size: 14px;
+    }
+
+    #imagem__assinatura {
+        padding-left: 135px;
+    }
+
+    /* skills */
+    .skills__line, .hobbies__line {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .skills__box, .hobbies__box {
+        margin-top: 32px;
+        width: 6.25rem;
+    }
 }

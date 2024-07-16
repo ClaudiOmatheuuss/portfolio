@@ -31,7 +31,7 @@
     background-color: #464646;
 }
 
-@media(max-width:768px) {
+@media (max-width:900px) {
 
     .hamburguer { display: block; }
 
@@ -78,4 +78,15 @@
         height: 24px;
     }
 
+}
+
+@media (min-width:680px) and (max-width:900px) {
+    .nav-menu {
+        width: 60%;
+        border-radius: 10%;
+    }
+    
+    .nav-menu.active { 
+        left: -30%; 
+    }
 }

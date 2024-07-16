@@ -1,0 +1,21 @@
+.skills__box, .hobbies__box {
+    display: flex;
+    text-align: left;
+    max-height: 20vh;
+    margin-left: 1.5rem;
+    transition: .25s all linear;
+    max-width: 20vh;
+}
+
+.skills__box ul, .hobbies__box ul {
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.skills__box:hover , .hobbies__box:hover {
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.75));
+}

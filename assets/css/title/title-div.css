@@ -1,8 +1,10 @@
 .title__div{
     align-items: center;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+    padding: 0 10%;
 }
 
 .title__container{

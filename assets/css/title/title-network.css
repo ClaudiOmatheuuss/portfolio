@@ -1,8 +1,7 @@
 .title__network{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 0%;
-    padding-left: 0;
-    padding-top: 1.1%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
     min-width: 80%;
 }

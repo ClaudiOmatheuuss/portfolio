@@ -1,6 +1,5 @@
 .about__container{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 4rem;
     width: 100%;
 }

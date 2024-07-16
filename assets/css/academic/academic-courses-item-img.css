@@ -1,3 +1,4 @@
-.academic__courses__item__img{
-    text-align: left;
+.academic__courses__item__img img{
+    width: 270px;
+    height: 200px;
 }

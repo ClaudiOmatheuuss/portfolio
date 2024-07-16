@@ -1,8 +1,8 @@
 .title__profile {   
-  border-radius: 100%;  
   transition: all 300ms linear;
   touch-action: manipulation;
   will-change: transform;
+  object-fit: contain;
 }
   
   

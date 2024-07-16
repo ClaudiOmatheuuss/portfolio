@@ -1,0 +1,7 @@
+.skills__line, .hobbies__line{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

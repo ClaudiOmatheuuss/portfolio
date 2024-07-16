@@ -1,0 +1,45 @@
+.see_more_btn {
+    margin: 0 auto;
+}
+
+.see_more_bar {
+    display: block;
+    width: 20px;
+    cursor: pointer;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: #2A7AE4;
+}
+
+.bars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 18px;
+}
+
+.left_bar--default {
+    position: absolute;
+    left: 42%;
+    rotate: -45deg;
+}
+
+.right_bar--default {
+    position: absolute;
+    left: 30%;
+    rotate: 45deg;
+}
+
+.left_bar--active {
+    position: absolute;
+    left: 44%;
+    rotate: 45deg;
+}
+
+.right_bar--active {
+    position: absolute;
+    left: 30%;
+    rotate: -45deg;
+}

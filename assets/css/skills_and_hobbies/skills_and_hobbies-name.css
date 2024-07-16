@@ -1,7 +1,7 @@
-.academic__courses__item__title{
+.skills__name, .hobbies__name {
     color: var(--cor-padrao-texto);
     font-family: var(--fonte-padrao);
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 22px;
-    text-align: center;
+    margin-bottom: 1rem;
 }
