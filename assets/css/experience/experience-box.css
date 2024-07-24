@@ -4,9 +4,20 @@
     justify-content: space-between;
     margin-top: 4rem;
     max-width: 100%;
+    transition: opacity .5s ease-in-out, max-height .5s ease-in-out;
+    opacity: 1;
 }
 
-#experience__box__apeperia{
+.disabled_xp {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+}
+
+#experience__box__reverse{
     align-items: center;
     display: flex;
     flex-direction: row-reverse;

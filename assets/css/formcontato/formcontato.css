@@ -1,6 +1,5 @@
 #contato{
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    min-width: 90%;
+    justify-content: center;
 }

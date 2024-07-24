@@ -124,17 +124,16 @@ section.academic {
 /* experiência*/
 
 section.experience {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem 5%;
-    width: 90%;
 }
 
 /*Contato*/
 
 section.formcontato {
     background-color: #EAF2FD;
-    display: block;
-    height: 62%;
     margin-top: 2rem;
     padding: 4rem;
 }
@@ -325,7 +324,7 @@ body::-webkit-scrollbar:active {
         width: 100%;
     }
 
-    #experience__box__apeperia {
+    #experience__box__reverse {
         flex-wrap: wrap;
         padding: 0;
         margin-bottom: 5rem;
@@ -469,7 +468,7 @@ body::-webkit-scrollbar:active {
         width: 18.5rem;
     }
 
-    #experience__box__apeperia {
+    #experience__box__reverse {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
@@ -564,5 +563,11 @@ body::-webkit-scrollbar:active {
     .skills__box, .hobbies__box {
         margin-top: 32px;
         width: 6.25rem;
+    }
+
+    /* contato */
+    
+    #contato {
+        gap: 4%;
     }
 }

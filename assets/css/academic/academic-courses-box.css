@@ -3,4 +3,14 @@
     padding: 8px 0;
     text-align: center;
     width: 23rem;
+    transition: opacity .5s ease-in-out, max-height .5s ease-in-out;
+    opacity: 1;
+}
+
+.disabled_course {
+    opacity: 0;
+    max-height: 0;
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
 }
