@@ -13,6 +13,7 @@ coloque nas sessões indicadas*/
 }
 
 body {
+    scroll-behavior: smooth;
     color: var(--cor-padrao-texto);
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
@@ -100,8 +101,7 @@ section.about {
 
 /*Sessão Skills e Hobbies*/
 section.skills, section.hobbies {
-    padding-top: 7rem;
-    padding-bottom: 5rem;
+    padding: 1.2rem 0;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -170,10 +170,10 @@ body::-webkit-scrollbar:active {
 }
 
 #scrollToTop {
-    background: #000;
+    background: var(--cor-padrao-texto);
     border-radius: 50%;
     bottom: 20px;
-    color: #fff;
+    color: var(--cor-de-fundo);
     font-size: 24px;
     display: none;
     height: 40px;
@@ -183,10 +183,12 @@ body::-webkit-scrollbar:active {
     text-align: center;
     width: 40px;
     z-index: 99;
+    transition: .5s ease-in-out;
 }
 
 #scrollToTop:hover {
-    background: #555;
+    background-color: darkcyan;
+    transform: scale(1.2);
 }
 
 @media (max-width: 900px) {
@@ -244,7 +246,7 @@ body::-webkit-scrollbar:active {
 
     .title__profile {
         display: flex;
-        filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.75));
+        filter: drop-shadow(4px 10px 14px rgba(0, 0, 0, 0.75));
         border-radius: 50%;
         margin: 0;
     }
@@ -338,6 +340,10 @@ body::-webkit-scrollbar:active {
 
     .experience__img {
         width: 25rem;
+    }
+
+    .experience__title {
+        font-size: 4em;
     }
 
     /*Contato*/
@@ -529,6 +535,8 @@ body::-webkit-scrollbar:active {
 
     .title__profile {
         border-radius: 20%;
+        height: 350px;
+        
     }
 
     /*Sessão sobre*/

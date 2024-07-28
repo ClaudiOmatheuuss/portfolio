@@ -6,15 +6,13 @@
     max-width: 100%;
     transition: opacity .5s ease-in-out, max-height .5s ease-in-out;
     opacity: 1;
+    position: relative;
 }
 
 .disabled_xp {
-    display: none;
     opacity: 0;
-    max-height: 0;
     pointer-events: none; 
-    margin: 0;
-    padding: 0;
+    position: absolute;
 }
 
 #experience__box__reverse{

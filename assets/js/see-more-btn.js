@@ -15,12 +15,12 @@ seeMoreCourses.addEventListener("click", () => {
 
     btn_courses_bars.childNodes[1].classList.contains("left_bar--default") ?
         btn_courses_bars.childNodes[1].classList.replace("left_bar--default", "left_bar--active")
-        :  btn_courses_bars.childNodes[1].classList.replace("left_bar--active", "left_bar--default")
-    
+        : btn_courses_bars.childNodes[1].classList.replace("left_bar--active", "left_bar--default")
+
     btn_courses_bars.childNodes[3].classList.contains("right_bar--default") ?
         btn_courses_bars.childNodes[3].classList.replace("right_bar--default", "right_bar--active")
-        :  btn_courses_bars.childNodes[3].classList.replace("right_bar--active", "right_bar--default")
-    
+        : btn_courses_bars.childNodes[3].classList.replace("right_bar--active", "right_bar--default")
+
     btn_courses_text.textContent = btn_courses_text.textContent === "Ver mais" ? "Ver menos" : "Ver mais"
 })
 
@@ -31,11 +31,31 @@ seeMoreXp.addEventListener("click", () => {
 
     btn_xp_bars.childNodes[1].classList.contains("left_bar--default") ?
         btn_xp_bars.childNodes[1].classList.replace("left_bar--default", "left_bar--active")
-        :  btn_xp_bars.childNodes[1].classList.replace("left_bar--active", "left_bar--default")
-    
+        : btn_xp_bars.childNodes[1].classList.replace("left_bar--active", "left_bar--default")
+
     btn_xp_bars.childNodes[3].classList.contains("right_bar--default") ?
         btn_xp_bars.childNodes[3].classList.replace("right_bar--default", "right_bar--active")
-        :  btn_xp_bars.childNodes[3].classList.replace("right_bar--active", "right_bar--default")
-    
+        : btn_xp_bars.childNodes[3].classList.replace("right_bar--active", "right_bar--default")
+
     btn_xp_text.textContent = btn_xp_text.textContent === "Ver mais" ? "Ver menos" : "Ver mais"
+    
+})
+
+seeMoreXp.addEventListener("click", () => {
+
+    const xpSection = document.querySelector(".experience")
+
+    if (btn_xp_bars.childNodes[3].classList.contains("right_bar--default")) {
+        xpSection.childNodes[1].scrollIntoView({ behavior: "smooth" })
+    }
+
+})
+
+seeMoreCourses.addEventListener("click", () => {
+    const coursesSection = document.querySelector(".academic")
+
+    if (btn_courses_bars.childNodes[3].classList.contains("right_bar--default")) {
+        coursesSection.childNodes[1].scrollIntoView({ behavior: "smooth" })
+    }
+
 })
