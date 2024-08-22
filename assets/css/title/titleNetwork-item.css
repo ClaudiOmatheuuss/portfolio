@@ -1,23 +1,46 @@
-.title__network__item{
+.title__network__item {
   font-family: var(--fonte-padrao);
   font-size: 16px;
   font-weight: 500;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.title__network__item span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 16px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.title__network__item:hover .title__network__item-botao {
+  transform: scale(1.1); 
+}
+
+.title__network__item:hover span {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2); 
 }
 
 .botao {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
   background-color: #000000;
   border: 2px solid #1A1A1A;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #2a7ae4;
+  font-weight: bold;
   cursor: pointer;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   outline: none;
   padding: 10px 10px;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: all .7s cubic-bezier(.23, 1, 0.32, 1);
   touch-action: manipulation;
   width: 100%;
   will-change: transform;
@@ -30,6 +53,7 @@
 .botao:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
+  background: none;
 }
 
 .botao:active {

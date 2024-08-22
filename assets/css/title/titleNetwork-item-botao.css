@@ -1,4 +1,16 @@
-.title__network__item-botao{
-    height:20px;
-    padding-left: 1rem;
+.title__network__item-botao {
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    overflow: hidden;
 }
+
+#github-logo { background-image: url("/assets/img/logo/github-logo.svg"); }
+
+#linkedin-logo { background-image: url("/assets/img/logo/linkedin-logo.svg"); }
+
+#instagram-logo { background-image: url("/assets/img/logo/instagram-logo.svg"); }
+
+#curriculo-logo { background-image: url("/assets/img/logo/curriculo-logo.svg"); }

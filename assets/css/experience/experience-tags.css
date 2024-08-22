@@ -1,0 +1,13 @@
+.experience__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .25em .625em;
+    gap: 24px;
+}
+
+.xp-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .32em;
+}

@@ -38,9 +38,9 @@
     <link rel="stylesheet" href="assets/css/academic/academic-courses-item-subtitle.css">
     <link rel="stylesheet" href="assets/css/experience/experience-section-title.css">
     <link rel="stylesheet" href="assets/css/experience/experience-box.css">
-    <link rel="stylesheet" href="assets/css/experience/experience-img.css">
     <link rel="stylesheet" href="assets/css/experience/experience-title.css">
     <link rel="stylesheet" href="assets/css/experience/experience-info.css">
+    <link rel="stylesheet" href="assets/css/experience/experience-tags.css">
     <link rel="stylesheet" href="assets/css/experience/experience-description.css">
     <link rel="stylesheet" href="assets/css/experience/experience-botao_repo.css">
     <link rel="stylesheet" href="assets/css/experience/experience-botao_demo.css">
@@ -55,8 +55,6 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -72,7 +70,7 @@
                 <p class="menu__title">Claudio Matheus</p>
             </header>
 
-            <nav class="default_nav">
+            <menu class="default_nav">
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
@@ -81,9 +79,9 @@
                     <li class="menu__list__item"><a href="#xp">Experiência</a></li>
                     <li class="menu__list__item__contato menu__list__item"><a href="#contato">Contato</a></li>
                 </ul>
-            </nav>
+            </menu>
 
-            <nav class="mobile_nav">
+            <menu class="mobile_nav">
 
                 <ul class="nav-menu">
                     <li class="menu__list__item nav-menu-item-mobile">
@@ -122,7 +120,7 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </nav>
+            </menu>
         </section>
 
         <!-- Sessão de Header/Title/Hero -->
@@ -137,21 +135,31 @@
                         Programadores do Amanhã.</h3>
                     <ul class="title__network">
                         <!-- Ponha os links de suas redes sociais favoritas -->
-                        <li class="title__network__item"><a class="botao" href="https://github.com/ClaudiOmatheuuss"
-                                target="_blank">Github <img src="assets/img/logo/github-logo.png"
-                                    class="title__network__item-botao" alt="Logo do github"> </a></li>
+                        <li class="title__network__item">
+                            <a class="botao" href="https://github.com/ClaudiOmatheuuss" target="_blank">
+                                <span id="network-item-name">Github</span>
+                                <div class="title__network__item-botao" id="github-logo"></div>
+                            </a>
+                        </li>
+                        <li class="title__network__item">
+                            <a class="botao" href="https://www.linkedin.com/in/cl%C3%A1udio-matheus-dev1/"
+                                target="blank">
+                                <span id="network-item-name">Linkedin</span>
+                                <div class="title__network__item-botao" id="linkedin-logo"> </div>
+                            </a>
+                        </li>
+                        <li class="title__network__item">
+                            <a class="botao" href="https://www.instagram.com/claudiomatheuuss/" target="blank">
+                                <span id="network-item-name">Instagram</span>
+                                <div class="title__network__item-botao" id="instagram-logo"> </div>
+                            </a>
+                        </li>
                         <li class="title__network__item"><a class="botao"
-                                href="https://www.linkedin.com/in/cl%C3%A1udio-matheus-dev1/" target="blank">Linkedin
-                                <img src="assets/img/logo/linkedin-logo.png" class="title__network__item-botao"
-                                    alt="Logo do linkedin"></a></li>
-                        <li class="title__network__item"><a class="botao"
-                                href="https://www.instagram.com/claudiomatheuuss/" target="blank">Instagram <img
-                                    src="assets/img/logo/instagram-logo.png" class="title__network__item-botao"
-                                    alt="Logo do Instagram"></a></li>
-                        <li class="title__network__item"><a class="botao"
-                                href="https://cursos.alura.com.br/emprega-one/profile/claudiomatheus01"
-                                target="_blank">Curriculo <img src="assets/img/logo/curriculo-logo.png"
-                                    class="title__network__item-botao" alt="Meu curriculo"></a></li>
+                                href="https://docs.google.com/document/d/1owDVna7lAawO76tNST2t6Nj77hAvrqFNVuxxR6Teiec/edit?usp=sharing" target="_blank">
+                                <span id="network-item-name">Curriculo</span>
+                                <div class="title__network__item-botao" id="curriculo-logo"> </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -159,30 +167,21 @@
 
         <!-- Sessão sobre mim -->
         <section class="about">
-            <div class="about__container" id="sobremim">
+            <article class="about__container" id="sobremim">
                 <h3 class="about__title">Sobre mim</h3>
-                <p class="about__paragraph">Tenho 19 anos, sou brasileiro e resido em Belo Jardim, Pernambuco. Me chamo
-                    Claudio Matheus, e sou um desenvolvedor especializado em front-end, completamente fascinado pela
-                    área de programação e tecnologia. Sou autodidata, gosto de trabalhar em equipe e estou sempre
-                    buscando novos conhecimentos na área, bem como meu aprimoramento pessoal, profissional e
-                    intelectual.</p>
-                <p class="about__paragraph">Minha jornada na programação começou no ensino médio, onde cursei um técnico
-                    integrado em Desenvolvimento de Sistemas. Posteriormente, ingressei na UFRPE, onde curso Bacharelado
-                    em Engenharia de Controle e Automação, mas continuo apaixonado pela área de tecnologia e
-                    programação. Para facilitar minha transição de carreira, me inscrevi no programa ONE da Oracle em
-                    parceria com a Alura, e que tem parceria com a Baterias Moura empresa no qual me candidatei ao
-                    processo
-                    seletivo de bolsas para a participação no Programa ONE, onde me formei em Desenvolvimento Front-End.
-                </p>
-                <p class="about__paragraph">Atualmente, participei de um processo seletivo e estou em formação em
-                    Desenvolvimento Web FullStack, Inglês e Soft Skills pelo PdA (Programadores do Amanhã). Meu objetivo
-                    é buscar aprimoramento contínuo e adquirir novos conhecimentos diariamente, com a ambição de me
-                    tornar um profissional cada vez mais qualificado na área de tecnologia e, um dia, realizar meu sonho
-                    de ter experiências no exterior.
-                </p>
-                <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
+                <p class="about__paragraph">Olá, meu nome é Claudio Matheus, tenho 19 anos e sou de Belo Jardim,
+                    Pernambuco. Sou um desenvolvedor front-end apaixonado por programação e tecnologia. Autodidata e
+                    colaborativo, estou sempre em busca de novos conhecimentos e aprimoramento profissional.</p>
+                <p class="about__paragraph">Minha trajetória começou no ensino médio com um técnico em Desenvolvimento
+                    de Sistemas. Atualmente, estudo Engenharia de Controle e Automação na UFRPE, mas minha paixão por
+                    tecnologia me levou a participar do programa ONE da Oracle em parceria com a Alura, onde me formei
+                    em Desenvolvimento Front-End.</p>
+                <p class="about__paragraph">Atualmente, estou em formação em Desenvolvimento Web FullStack, Inglês e
+                    Soft Skills pelo PdA (Programadores do Amanhã). Busco constantemente novos conhecimentos e tenho o
+                    objetivo de me tornar um profissional altamente qualificado na área de tecnologia, com o sonho de
+                    adquirir experiências internacionais no futuro.</p>
                 <img src="assets/img/signature.png" id="imagem__assinatura">
-            </div>
+            </article>
         </section>
 
         <!-- Sessão de Skills/Habilidades -->
@@ -325,6 +324,344 @@
             </div>
         </section>
 
+        <!-- Sessão de Experiência Profissional/Projetos-->
+        <section class="experience">
+            <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
+            <div class="experience__box" id="experience__box__reverse">
+
+                <img class="experience__img" src="assets/img/experience/print_alurageek.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">AluraGeek</h2>
+                    <div class="experience__tags">
+
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="Js" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="Node JS" height="30" width="40"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/AluraGeek" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/AluraGeek/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box">
+
+                <img class="experience__img" src="assets/img/experience/print_hypnix-ang.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">Hypnix Ang</h2>
+                    <div class="experience__tags">
+
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="TypeScript" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="Node JS" height="30" width="40"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="Angular" height="30" width="40"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" />
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="Bootstrap" height="30" width="40"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/hypnix_ang" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/hypnix_ang/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box" id="experience__box__reverse">
+                <img class="experience__img" src="assets/img/experience/print_fruta-e-fruto.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">Site de Receitas</h2>
+                    <div class="experience__tags">
+
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/fruta_e_fruto" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/fruta_e_fruto/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box">
+
+                <img class="experience__img" src="assets/img/experience/print_optimus-tech.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">OptimusTech</h2>
+                    <div class="experience__tags">
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/optimusTech" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/optimusTech/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box disabled_xp" id="experience__box__reverse">
+
+                <img class="experience__img" src="assets/img/experience/print_apeperia.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">Apeperia</h2>
+                    <div class="experience__tags">
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/apeperia" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/apeperia/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box disabled_xp">
+                <!-- Insira a logo/captura de seu projeto/trabalho -->
+                <img class="experience__img" src="assets/img/experience/print_encriptador.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">Encriptador de texto</h2>
+                    <div class="experience__tags">
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+
+
+                        <span class="xp-tag">
+                            <img alt="Js" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/encriptador-de-texto" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/encriptador-de-texto/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box disabled_xp" id="experience__box__reverse">
+
+                <img class="experience__img" src="assets/img/experience/print_hypnix.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">Hypnix</h2>
+                    <div class="experience__tags">
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+
+
+                        <span class="xp-tag">
+                            <img alt="Js" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/hypnix" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://claudiomatheuuss.github.io/hypnix/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box disabled_xp">
+
+                <img class="experience__img" src="assets/img/experience/print_cinetag.png"
+                    alt="Imagem ilustrativa do projeto">
+                <div class="experience__info">
+                    <h2 class="experience__title">Cinetag</h2>
+                    <div class="experience__tags">
+
+                        <span class="xp-tag">
+                            <img alt="HTML" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="CSS" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                        </span>
+
+
+                        <span class="xp-tag">
+                            <img alt="Js" height="30" width="40"
+                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="Node JS" height="30" width="40"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                        </span>
+
+                        <span class="xp-tag">
+                            <img alt="React" height="30" width="40"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        </span>
+                    </div>
+                    <div class="experience__description">
+                        <span class="experience__repo">
+                            <a href="https://github.com/ClaudiOmatheuuss/cinetag" target="_blank">
+                                <button class="experience__botao--repo">Repositório</button>
+                            </a>
+                        </span>
+                        <span class="experience__demo">
+                            <a href="https://cinetag-swart.vercel.app/" target="_blank">
+                                <button class="experience__botao--demo">Ver demo</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <span class="see_more_btn">
+                <button class="see_more_button" id="see_more_xp">
+                    <div class="bars xp_btn_bars">
+                        <div class="see_more_bar left_bar--default"></div>
+                        <div class="see_more_bar right_bar--default"></div>
+                    </div>
+                    <span class="see_more_xp_btn_text">Ver mais</span>
+                </button>
+            </span>
+        </section>
+
         <!-- Sessão de Histórico Acadêmico -->
         <section class="academic">
             <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
@@ -333,7 +670,8 @@
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
                         <li class="academic__courses__item__img">
-                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7217998221191614464/" target="_blank">
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7217998221191614464/"
+                                target="_blank">
                                 <img src="./assets/img/logo/pda-logo.png" alt="logo da instituição">
                             </a>
                         </li>
@@ -349,8 +687,9 @@
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
                         <li class="academic__courses__item__img">
-                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:3fd8562b-a874-424d-b1de-9e6ef7d6e7a9?viewer%21megaVerb=group-discover" target="_blank">
-                                <img src="assets/img/logo/ete-logo.jpg" alt="logo da instituição">
+                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:3fd8562b-a874-424d-b1de-9e6ef7d6e7a9?viewer%21megaVerb=group-discover"
+                                target="_blank">
+                                <img src="assets/img/logo/ete-logo.png" alt="logo da instituição">
                             </a>
                         </li>
                         <li class="academic__courses__item__title">
@@ -568,7 +907,7 @@
                 <div class="academic__courses__box disabled_course">
                     <ul class="academic__courses__list">
                         <li class="academic__courses__item__img">
-                            <a href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?PMNwv6o%2fukL0vGOiOi4HqNLl%2bn5ETS8Y"
+                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:738c8262-459e-4175-b01b-55fc865b25f1"
                                 target="_blank">
                                 <img src="assets/img/logo/bradesco-logo.png" alt="logo da instituição">
                             </a>
@@ -585,7 +924,7 @@
                 <div class="academic__courses__box disabled_course">
                     <ul class="academic__courses__list">
                         <li class="academic__courses__item__img">
-                            <a href="https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateContent.aspx?PMNwv6o%2fukLTfxP7zp3AVuC2sShQ7XW7"
+                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:US:5b3405f0-ef38-4682-bdb0-e593c7fc8916"
                                 target="_blank">
                                 <img src="assets/img/logo/bradesco-logo.png" alt="logo da instituição">
                             </a>
@@ -611,187 +950,6 @@
             </span>
         </section>
 
-        <!-- Sessão de Experiência Profissional/Projetos-->
-        <section class="experience">
-            <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-            <div class="experience__box" id="experience__box__reverse">
-
-                <img class="experience__img" src="assets/img/experience/print_alurageek.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">AluraGeek</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/AluraGeek" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/AluraGeek/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box">
-
-                <img class="experience__img" src="assets/img/experience/print_hypnix-ang.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">Hypnix Ang</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/hypnix_ang" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/hypnix_ang/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box" id="experience__box__reverse">
-                <img class="experience__img" src="assets/img/experience/print_fruta-e-fruto.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">Site de Receitas</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/fruta_e_fruto" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/fruta_e_fruto/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box">
-
-                <img class="experience__img" src="assets/img/experience/print_optimus-tech.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">OptimusTech</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/optimusTech" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/optimusTech/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box disabled_xp" id="experience__box__reverse">
-
-                <img class="experience__img" src="assets/img/experience/print_apeperia.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">Apeperia</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/apeperia" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/apeperia/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box disabled_xp">
-                <!-- Insira a logo/captura de seu projeto/trabalho -->
-                <img class="experience__img" src="assets/img/experience/print_encriptador.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/encriptador-de-texto" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/encriptador-de-texto/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box disabled_xp" id="experience__box__reverse">
-
-                <img class="experience__img" src="assets/img/experience/print_hypnix.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">Hypnix</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/hypnix" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://claudiomatheuuss.github.io/hypnix/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience__box disabled_xp">
-
-                <img class="experience__img" src="assets/img/experience/print_cinetag.png"
-                    alt="Imagem ilustrativa do projeto">
-                <div class="experience__info">
-                    <h2 class="experience__title">Cinetag</h2>
-                    <div class="experience__description">
-                        <span class="experience__repo">
-                            <a href="https://github.com/ClaudiOmatheuuss/cinetag" target="_blank">
-                                <button class="experience__botao--repo">Repositório</button>
-                            </a>
-                        </span>
-                        <span class="experience__demo">
-                            <a href="https://cinetag-swart.vercel.app/" target="_blank">
-                                <button class="experience__botao--demo">Ver demo</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <span class="see_more_btn">
-                <button class="see_more_button" id="see_more_xp">
-                    <div class="bars xp_btn_bars">
-                        <div class="see_more_bar left_bar--default"></div>
-                        <div class="see_more_bar right_bar--default"></div>
-                    </div>
-                    <span class="see_more_xp_btn_text">Ver mais</span>
-                </button>
-            </span>
-        </section>
         <!-- Sessão de Contato -->
         <section class="formcontato">
             <div id="contato" class="formcontato__contacto">
@@ -803,12 +961,11 @@
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                     <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido
                         possível. </h3>
-                    <form class="formcontato__form" action="https://formsubmit.co/claudiom.pst@gmail.com"
-                        method="POST">
-                        <input class="formcontato__input" type="text" name="name nome" id="nome" placeholder="Nome" required
-                            maxlength="50">
+                    <form class="formcontato__form" action="https://formsubmit.co/claudiom.pst@gmail.com" method="POST">
+                        <input class="formcontato__input" type="text" name="name nome" id="nome" placeholder="Nome"
+                            required maxlength="50" autocomplete="name">
                         <input class="formcontato__input" type="email" name="email" id="email" placeholder="Email"
-                            required>
+                            required autocomplete="email">
                         <input class="formcontato__input" type="text" name="_subject" id="assunto" placeholder="Assunto"
                             required maxlength="50">
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem"
