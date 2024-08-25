@@ -7,10 +7,10 @@
     overflow: hidden;
 }
 
-#github-logo { background-image: url("/assets/img/logo/github-logo.svg"); }
+#github-logo { background-image: url("../../img/logo/github-logo.svg"); }
 
-#linkedin-logo { background-image: url("/assets/img/logo/linkedin-logo.svg"); }
+#linkedin-logo { background-image: url("../../img/logo/linkedin-logo.svg"); }
 
-#instagram-logo { background-image: url("/assets/img/logo/instagram-logo.svg"); }
+#instagram-logo { background-image: url("../../img/logo/instagram-logo.svg"); }
 
-#curriculo-logo { background-image: url("/assets/img/logo/curriculo-logo.svg"); }
+#curriculo-logo { background-image: url("../../img/logo/curriculo-logo.svg"); }
