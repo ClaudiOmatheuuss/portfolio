@@ -1,0 +1,17 @@
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-padrao-texto);
+    border: none;
+    gap: 10px;
+    background: none;
+    cursor: pointer;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.theme-indicator {
+    width: 24px;
+}

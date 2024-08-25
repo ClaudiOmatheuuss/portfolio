@@ -1,6 +1,4 @@
-.academic__courses{
+.academic__courses {
     display: flex;
-    justify-content: space-around;
-    padding-left: 20px;
     flex-wrap: wrap;
 }

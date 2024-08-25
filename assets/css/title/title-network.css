@@ -1,6 +1,5 @@
 .title__network{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
     position: relative;

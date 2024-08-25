@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/menu/menu-title.css">
     <link rel="stylesheet" href="assets/css/menu/menu-list.css">
     <link rel="stylesheet" href="assets/css/menu/menuList-item.css">
+    <link rel="stylesheet" href="assets/css/menu/theme-toggle.css">
     <link rel="stylesheet" href="assets/css/title/title-div.css">
     <link rel="stylesheet" href="assets/css/title/title-bio.css">
     <link rel="stylesheet" href="assets/css/title/title-subsection.css">
@@ -69,7 +70,8 @@
                 <img src="assets/img/vector.png" width="22px" height="22px">
                 <p class="menu__title">Claudio Matheus</p>
             </header>
-
+            <button class="theme-toggle"><img class="theme-indicator" src="./assets/img/icons/moon.png"
+                    alt="imagem que indica o tema atual da página"><span>Mudar Tema</span></button>
             <menu class="default_nav">
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
@@ -124,7 +126,7 @@
         </section>
 
         <!-- Sessão de Header/Title/Hero -->
-        <section class="title">
+        <section class="title hidden">
             <div class="title__div">
                 <img class="title__profile" src="assets/img/profile.png">
                 <div class="title__container" id="#sobremim">
@@ -155,7 +157,8 @@
                             </a>
                         </li>
                         <li class="title__network__item"><a class="botao"
-                                href="https://docs.google.com/document/d/1owDVna7lAawO76tNST2t6Nj77hAvrqFNVuxxR6Teiec/edit?usp=sharing" target="_blank">
+                                href="https://docs.google.com/document/d/1owDVna7lAawO76tNST2t6Nj77hAvrqFNVuxxR6Teiec/edit?usp=sharing"
+                                target="_blank">
                                 <span id="network-item-name">Curriculo</span>
                                 <div class="title__network__item-botao" id="curriculo-logo"> </div>
                             </a>
@@ -172,8 +175,9 @@
                 <p class="about__paragraph">Olá, meu nome é Claudio Matheus, tenho 19 anos e sou de Belo Jardim,
                     Pernambuco. Sou um desenvolvedor front-end apaixonado por programação e tecnologia. Autodidata e
                     colaborativo, estou sempre em busca de novos conhecimentos e aprimoramento profissional.</p>
-                <p class="about__paragraph">Minha trajetória começou no ensino médio com um técnico em Desenvolvimento
-                    de Sistemas. Atualmente, estudo Engenharia de Controle e Automação na UFRPE, mas minha paixão por
+                <p class="about__paragraph">Minha trajetória na programação começou no ensino médio onde me formei
+                    técnico em Desenvolvimento
+                    de Sistemas. Atualmente, estudo Engenharia de Controle e Automação na UFRPE, minha paixão por
                     tecnologia me levou a participar do programa ONE da Oracle em parceria com a Alura, onde me formei
                     em Desenvolvimento Front-End.</p>
                 <p class="about__paragraph">Atualmente, estou em formação em Desenvolvimento Web FullStack, Inglês e
@@ -185,7 +189,7 @@
         </section>
 
         <!-- Sessão de Skills/Habilidades -->
-        <section class="skills">
+        <section class="skills hidden">
             <h3 class="skills__title" id="skills">Skills</h3>
             <div class="skills__line">
                 <div class="skills__box">
@@ -254,7 +258,7 @@
         </section>
 
         <!-- Sessão de Hobbies -->
-        <section class="hobbies" id="hobbies">
+        <section class="hobbies hidden" id="hobbies">
             <h3 class="hobbies__title">Hobbies</h3>
             <div class="hobbies__line">
                 <div class="hobbies__box">
@@ -325,7 +329,7 @@
         </section>
 
         <!-- Sessão de Experiência Profissional/Projetos-->
-        <section class="experience">
+        <section class="experience hidden">
             <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
             <div class="experience__box" id="experience__box__reverse">
 
@@ -663,7 +667,7 @@
         </section>
 
         <!-- Sessão de Histórico Acadêmico -->
-        <section class="academic">
+        <section class="academic hidden">
             <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
             <div class="academic__courses">
 
@@ -951,7 +955,7 @@
         </section>
 
         <!-- Sessão de Contato -->
-        <section class="formcontato">
+        <section class="formcontato hidden">
             <div id="contato" class="formcontato__contacto">
                 <div class="formcontato--esquerda">
                     <img class="formcontato__img" src="assets/img/contact_image.png">
@@ -978,7 +982,7 @@
         </section>
 
         <!-- Sessão de Footer/Rodapé-->
-        <section class="footer">
+        <section class="footer hidden">
             <div class="footer__rodape">
                 <p>Desenvolvido por Claudio Matheus</p>
                 <p>2023</p>
@@ -994,6 +998,7 @@
         <script src="assets/js/mobile-menu.js" defer></script>
         <script src="assets/js/see-more-btn.js" defer></script>
         <script src="assets/js/scroll.js" defer></script>
+        <script src="assets/js/light-dark-mode.js" defer></script>
 </body>
 
 </html>

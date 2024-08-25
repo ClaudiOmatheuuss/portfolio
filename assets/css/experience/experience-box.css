@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
-    gap: 5dvw;
+    gap: 7dvw;
     transition: opacity .5s ease-in-out, max-height .5s ease-in-out;
     opacity: 1;
     position: relative;

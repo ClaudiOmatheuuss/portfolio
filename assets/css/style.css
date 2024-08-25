@@ -8,26 +8,52 @@ coloque nas sessões indicadas */
     --cor-de-link: #000;
     --fonte-padrao: 'Raleway', sans-serif;
     --cor-padrao-texto: #464646;
-    --tamanho-padrao-container: 71rem;
+}
+
+[data-theme='dark'] {
+    --cor-de-fundo: #000;
+    --cor-de-link: #EDEDED;
+    --cor-padrao-texto: #EDEDED;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
 }
 
 body {
     scroll-behavior: smooth;
-    color: var(--cor-padrao-texto);
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-padrao);
     line-height: 1;
     margin: 0;
     padding: 0;
+    transition: .7s all ease-in-out;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: var(--fonte-padrao);
+    color: var(--cor-padrao-texto);
+}
+
+p { 
     color: var(--cor-padrao-texto);
 }
 
@@ -37,7 +63,8 @@ a {
     text-decoration: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-bottom: 2px solid #2A7AE4;
     box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 15px;
     color: #2A7AE4;
@@ -53,20 +80,21 @@ section.menu {
     height: 88px;
     margin: 0 auto;
     padding: 32px 0;
-    width: 84%;
+    width: 84dvw;
 }
 
 /* Title */
 section.title {
-    display: block;
-    height: auto;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    width: var(--tamanho-padrao-container);
+    width: 100%;
 }
 
 /* About */
 section.about {
-    background-color: #EAF2FD;
+    /* background-color: #8fbfb9; */
+    background-color: #649ea7;
     display: block;
     margin-top: 5rem;
     padding: 4rem 0;
@@ -74,14 +102,14 @@ section.about {
 }
 
 /* Skills e Hobbies */
-section.skills, section.hobbies {
+section.skills,
+section.hobbies {
     padding: 1.2rem 0;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100%;
 }
 
 section.skills {
@@ -105,7 +133,6 @@ section.experience {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 5%;
 }
 
 /* Contato */
@@ -122,7 +149,7 @@ section.footer {
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--cor-de-fundo);
     padding: 2rem;
 }
 
@@ -136,7 +163,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: darkcyan;
+    background-color: #649ea7;
     border-radius: 15px;
 }
 
@@ -162,7 +189,7 @@ body::-webkit-scrollbar:active {
 }
 
 #scrollToTop:hover {
-    background-color: darkcyan;
+    background-color: #649ea7;
     transform: scale(1.2);
 }
 
@@ -175,13 +202,12 @@ body::-webkit-scrollbar:active {
     section.menu {
         display: flex;
         justify-content: space-around;
-        width: 100%;
+        width: 95dvw;
     }
 
     .default_nav {
         display: none;
         justify-content: flex-end;
-        padding: 1rem;
         width: 10%;
     }
 
@@ -194,22 +220,17 @@ body::-webkit-scrollbar:active {
     }
 
     /* Título */
-    section.title {
-        text-align: center;
-        width: 100%;
-    }
-
     .title__div {
         flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
         margin: 0;
         padding: 0;
         width: 100%;
     }
 
     .title__container {
-        align-items: flex-start;
-        position: relative;
-        width: 60%;
+        align-items: center;
     }
 
     .title__bio {
@@ -219,15 +240,17 @@ body::-webkit-scrollbar:active {
         width: 100%;
     }
 
-    .title__network {
-        width: 100vw;
-    }
-
     .title__profile {
         display: flex;
         filter: drop-shadow(4px 10px 14px rgba(0, 0, 0, 0.75));
         border-radius: 50%;
         margin: 0;
+    }
+
+    .title__network {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Sobre */
@@ -237,7 +260,6 @@ body::-webkit-scrollbar:active {
 
     #sobremim {
         align-items: flex-start;
-        background-color: #EAF2FD;
     }
 
     .about__container {
@@ -258,32 +280,18 @@ body::-webkit-scrollbar:active {
     }
 
     /* Skills e Hobbies */
-    .skills__line, .hobbies__line {
+    .skills__line,
+    .hobbies__line {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
         width: 100vh;
     }
 
-    .skills__box, .hobbies__box {
+    .skills__box,
+    .hobbies__box {
         margin-top: 1.2rem;
         width: 9rem;
-    }
-
-    /* Formação Acadêmica */
-    section.academic {
-        padding: 2em;
-        padding-left: 0;
-    }
-
-    .academic__courses {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .academic__courses__box {
-        margin: 3rem 0;
-        margin-top: 0;
     }
 
     /* Experiência Profissional */
@@ -331,13 +339,9 @@ body::-webkit-scrollbar:active {
     }
 
     /* Título */
-    section.title {
-        width: 100%;
-    }
-
     .title__div {
         margin-top: 0;
-        width: 320px;
+        width: 90dvw;
     }
 
     .title__container {
@@ -371,16 +375,13 @@ body::-webkit-scrollbar:active {
     }
 
     /* Sobre */
-    .about {
-        border-radius: 10%;
-    }
-
     .about__container {
         display: flex;
         justify-content: center;
     }
 
-    .about__paragraph, .about__title {
+    .about__paragraph,
+    .about__title {
         padding: 0 15px;
     }
 
@@ -422,18 +423,13 @@ body::-webkit-scrollbar:active {
     /* Formação Acadêmica */
     section.academic {
         height: auto;
-        padding: 2em;
-        padding-left: 0;
     }
 
     .academic__courses {
-        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        padding-left: 0;
         width: 100%;
-    }
-
-    .academic__courses__box {
-        margin: 3rem 0;
-        margin-top: 0;
     }
 
     /* Experiência Profissional */
@@ -484,7 +480,6 @@ body::-webkit-scrollbar:active {
 
     /* Título */
     section.title {
-        width: 100%;
         height: auto;
     }
 
@@ -494,7 +489,6 @@ body::-webkit-scrollbar:active {
     }
 
     .title__container {
-        margin-right: 5%;
         width: 57%;
     }
 
@@ -519,7 +513,8 @@ body::-webkit-scrollbar:active {
         justify-content: left;
     }
 
-    .about__paragraph, .about__title {
+    .about__paragraph,
+    .about__title {
         padding: 0 135px;
     }
 
@@ -534,25 +529,34 @@ body::-webkit-scrollbar:active {
         padding-left: 135px;
     }
 
+    .academic__courses {
+        justify-content: space-around;
+        padding-left: 20px;
+    }
+
     /* Skills */
-    .skills__line, .hobbies__line {
+    .skills__line,
+    .hobbies__line {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
     }
 
-    .skills__box, .hobbies__box {
+    .skills__box,
+    .hobbies__box {
         margin-top: 32px;
         width: 6.25rem;
     }
 
     /* Experiência */
-    .experience__box, #experience__box__reverse {
+    .experience__box,
+    #experience__box__reverse {
         width: 80dvw;
         margin-bottom: 48px;
     }
 
     .experience__img {
+        border-radius: 30px;
         transform: scale(1.32);
     }
 
