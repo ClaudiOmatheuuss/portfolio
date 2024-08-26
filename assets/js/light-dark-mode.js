@@ -32,7 +32,7 @@ function updateImageSource() {
 
     if (currentTheme === 'light') {
         imgElement.src = './assets/img/icons/moon.png';
-    } else {
+    } else if (currentTheme === '' || currentTheme === 'dark') {
         imgElement.src = './assets/img/icons/sun.png';
     }
 }
