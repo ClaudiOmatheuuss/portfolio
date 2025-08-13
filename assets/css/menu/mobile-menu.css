@@ -47,7 +47,7 @@
     .hamburguer.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -66,6 +66,7 @@
     .nav-menu.active {
         opacity: 1;
         left: -50%;
+        padding: 1.5rem 2rem
     }
 
     .nav-menu-item-mobile {
